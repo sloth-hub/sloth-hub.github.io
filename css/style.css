@@ -462,7 +462,7 @@ section.contact {
 }
 
 .contact .github::before {
-    content: url("/img/GitHub-Mark-32px.png");
+    content: url("./img/GitHub-Mark-32px.png");
     filter: brightness(0) invert(1);
     margin-right: 7px;
 }
