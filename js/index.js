@@ -5,6 +5,8 @@ const closeBtn = document.querySelector("span.close");
 const modal = document.querySelector("div.modal");
 const modalImg = modal.querySelector("img.gallary-img");
 const topbtn = document.querySelector("a.top");
+const toggleBar = document.querySelector("div.toggle-bar");
+const navmenu = document.querySelector("ul.nav-menu");
 
 init();
 
@@ -12,6 +14,7 @@ function init() {
     window.addEventListener("scroll", scrollHeader);
     AOS.init();
     skillsScrollAnimate();
+    clickedToggleBar();
     clickedImage();
 }
 
@@ -37,6 +40,13 @@ function skillsScrollAnimate() {
                 e.classList.remove("circle_animation");
             });
         };
+    });
+}
+
+function clickedToggleBar() {
+    toggleBar.addEventListener("click", ()=>{
+        navmenu.classList.toggle("show");
+        header.classList.toggle("active");
     });
 }
 

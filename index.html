@@ -16,17 +16,20 @@
 <body>
 	<!-- header -->
 	<header class="header-wrap">
-		<nav class="container navbar">
-			<div class="nav-logo">
-				<a class="nav-logotext" href="#">CHAE HYERIN</a>
+		<nav class="navbar">
+			<div class="container">
+				<div class="nav-logo">
+					<a class="nav-logotext" href="#">CHAE HYERIN</a>
+				</div>
+				<div class="toggle-bar"></div>
+				<ul class="nav-menu">
+					<li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+					<li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
+					<li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
+					<li class="nav-item"><a class="nav-link" href="#works">WORKS</a></li>
+					<li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+				</ul>
 			</div>
-			<ul class="nav-menu">
-				<li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
-				<li class="nav-item"><a class="nav-link" href="#skills">SKILLS</a></li>
-				<li class="nav-item"><a class="nav-link" href="#projects">PROJECTS</a></li>
-				<li class="nav-item"><a class="nav-link" href="#works">WORKS</a></li>
-				<li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
-			</ul>
 		</nav>
 	</header>
 	<!-- home -->
@@ -40,11 +43,14 @@
 					<div class="content-right">
 						<div class="home-text">
 							<div class="home-text name">
-								<h3>Hello, I am</h3>
-								<h1>채혜린</h1>
+								<div>
+									<h3>Hello, I am</h3>
+									<h1>채혜린</h1>
+								</div>
 							</div>
-							<p>이러이러한 퍼블리셔가 되고싶습니다. 어쩌구 저쩌구 저쩌구. 어쩌구. 저쩌구.</p>
-							<p>이러이러한 어쩌구 저쩌구. 어쩌구.</p>
+							<p>사용자의 니즈를 찰떡같이 파악하는 
+								웹잘알 프론트엔드 개발자를 꿈꾸는 
+								채혜린 입니다.</p>
 						</div>
 					</div>
 				</div>
@@ -56,31 +62,36 @@
 		<div class="container">
 			<h2>about</h2>
 			<div class="content">
-				<dl class="info" data-aos="fade-up-right" data-aos-duration="800" data-aos-delay="100" data-aos-anchor-placement="center-bottom">
-					<dt class="list-title">info</dt>
-					<dd class="birth">
+				<ul class="info" data-aos="fade-up-right" data-aos-duration="600" data-aos-delay="100"
+					data-aos-anchor-placement="center-bottom">
+					<li class="list-title">info</li>
+					<li class="birth">
 						1995.10.11
-					</dd>
-					<dd class="call">
+					</li>
+					<li class="call">
 						010-3338-1807
-					</dd>
-					<dd class="email">
+					</li>
+					<li class="email">
 						zhd7zhd@naver.com
-					</dd>
-					<dd class="location">
+					</li>
+					<li class="location">
 						경기도 안산시
-					</dd>
-				</dl>
-				<dl class="education" data-aos="fade-up-right" data-aos-duration="800" data-aos-delay="400" data-aos-anchor-placement="center-bottom">
-					<dt class="list-title">education</dt>
-					<dd><span class="date">2014.03 - 2016.02</span> 한양여자대학교 의상디자인과 졸업</dd>
-					<dd><span class="date">2019.05 - 2019.07</span> 더조은 웹표준 기반 반응형 웹디자인&웹퍼블리셔 수료</dd>
-				</dl>
-				<dl class="license" data-aos="fade-up-right" data-aos-duration="800" data-aos-delay="800" data-aos-anchor-placement="center-bottom">
-					<dt class="list-title">license</dt>
-					<dd><span class="date">2018.01</span> GTQ 포토샵 1급</dd>
-					<dd><span class="date">2012.12</span> ITQ 액셀 A등급</dd>
-				</dl>
+					</li>
+				</ul>
+				<ul class="education" data-aos="fade-up-right" data-aos-duration="600" data-aos-delay="400"
+					data-aos-anchor-placement="center-bottom">
+					<li class="list-title">education</li>
+					<li><span class="date">2014.03 - 2016.02</span>
+						한양여자대학교 의상디자인과 졸업</li>
+					<li><span class="date">2019.05 - 2019.07</span>
+						더조은 웹표준 기반 반응형 웹디자인&웹퍼블리셔 수료</li>
+				</ul>
+				<ul class="license" data-aos="fade-up-right" data-aos-duration="600" data-aos-delay="800"
+					data-aos-anchor-placement="center-bottom">
+					<li class="list-title">license</li>
+					<li><span class="date">2018.01</span> GTQ 포토샵 1급</li>
+					<li><span class="date">2012.12</span> ITQ 액셀 A등급</li>
+				</ul>
 			</div>
 		</div>
 	</section>
@@ -102,8 +113,8 @@
 						</defs>
 						<circle r="69.85699" cy="81" cx="81" stroke-width="8" stroke="rgba(255,255,255,0.4)"
 							fill="none" />
-						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8"
-							stroke="url(#gradient)" fill="none" />
+						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="url(#gradient)"
+							fill="none" />
 					</svg>
 				</div>
 				<div class="skill-chart css">
@@ -119,8 +130,8 @@
 						</defs>
 						<circle r="69.85699" cy="81" cx="81" stroke-width="8" stroke="rgba(255,255,255,0.4)"
 							fill="none" />
-						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8"
-							stroke="url(#gradient)" fill="none" />
+						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="url(#gradient)"
+							fill="none" />
 					</svg>
 				</div>
 				<div class="skill-chart javascript">
@@ -137,8 +148,8 @@
 						</defs>
 						<circle r="69.85699" cy="81" cx="81" stroke-width="8" stroke="rgba(255,255,255,0.4)"
 							fill="none" />
-						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8"
-							stroke="url(#gradient)" fill="none" />
+						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="url(#gradient)"
+							fill="none" />
 					</svg>
 				</div>
 				<div class="skill-chart jquery">
@@ -154,8 +165,8 @@
 						</defs>
 						<circle r="69.85699" cy="81" cx="81" stroke-width="8" stroke="rgba(255,255,255,0.4)"
 							fill="none" />
-						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8"
-							stroke="url(#gradient)" fill="none" />
+						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="url(#gradient)"
+							fill="none" />
 					</svg>
 				</div>
 				<div class="skill-chart react">
@@ -171,8 +182,8 @@
 						</defs>
 						<circle r="69.85699" cy="81" cx="81" stroke-width="8" stroke="rgba(255,255,255,0.4)"
 							fill="none" />
-						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8"
-							stroke="url(#gradient)" fill="none" />
+						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="url(#gradient)"
+							fill="none" />
 					</svg>
 				</div>
 				<div class="skill-chart illustrator">
@@ -189,8 +200,8 @@
 						</defs>
 						<circle r="69.85699" cy="81" cx="81" stroke-width="8" stroke="rgba(255,255,255,0.4)"
 							fill="none" />
-						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8"
-							stroke="url(#gradient)" fill="none" />
+						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="url(#gradient)"
+							fill="none" />
 					</svg>
 				</div>
 				<div class="skill-chart photoshop">
@@ -207,21 +218,75 @@
 						</defs>
 						<circle r="69.85699" cy="81" cx="81" stroke-width="8" stroke="rgba(255,255,255,0.4)"
 							fill="none" />
-						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8"
-							stroke="url(#gradient)" fill="none" />
+						<circle class="skillbar" r="69.85699" cy="81" cx="81" stroke-width="8" stroke="url(#gradient)"
+							fill="none" />
 					</svg>
 				</div>
 			</div>
 		</div>
 	</section>
+	<!-- projects -->
 	<section id="projects">
 		<div class="container">
 			<h2>projects</h2>
-			<div class="projects project-1">
-				<h4>What To Eat Today?</h4>
+			<div class="content" data-aos="fade-up-left" data-aos-duration="600"
+				data-aos-anchor-placement="center-bottom">
+				<div class="content-left">
+					<img class="proj-thumb" src="./img/wtet_pc.png" alt="what to eat today">
+					<ul class="url-list">
+						<li><a href="https://sloth-hub.github.io/whattoeattoday" target="_blank">preview</a></li>
+						<li><a href="https://github.com/sloth-hub/whattoeattoday" target="_blank">github</a></li>
+					</ul>
+				</div>
+				<div class="content-right">
+					<h3>What To Eat Today?</h3>
+					<p>현대인이 매일 직면하는 최대의 난제, "오늘 뭐 먹지?"
+						What to eat today?는 Weather API를 이용해 실시간 날씨 정보를 가져와 오늘의 기분과 땡기는 맛을 조합하여 메뉴를 추천해주는 반응형 웹사이트 입니다.
+					</p>
+					<h4 class="list-title">skills</h4>
+					<ul class="skill-list">
+						<li class="skill-desc">html5</li>
+						<li class="skill-desc">css3</li>
+						<li class="skill-desc">javascript</li>
+						<li class="skill-desc">react</li>
+						<li class="skill-desc">firebase</li>
+					</ul>
+					<h4 class="list-title">colors</h4>
+					<ul class="color-list">
+						<li class="color orange"></li>
+						<li class="color red"></li>
+						<li class="color rose"></li>
+					</ul>
+				</div>
 			</div>
-			<div class="projects project-2">
-				<h4>Kellogg Site Redesign</h4>
+			<div class="content" data-aos="fade-up-left" data-aos-duration="600"
+				data-aos-anchor-placement="center-bottom">
+				<div class="content-left">
+					<img class="proj-thumb" src="./img/portfolio_pc.png" alt="what to eat today">
+					<ul class="url-list">
+						<li><a href="https://sloth-hub.github.io" target="_blank">preview</a></li>
+						<li><a href="https://github.com/sloth-hub/sloth-hub.github.io" target="_blank">github</a></li>
+					</ul>
+				</div>
+				<div class="content-right">
+					<h3>포트폴리오</h3>
+					<p>웹 포트폴리오입니다.
+						스크롤 애니메이션을 적용한 반응형 웹사이트입니다.
+					</p>
+					<h4 class="list-title">skills</h4>
+					<ul class="skill-list">
+						<li class="skill-desc">html5</li>
+						<li class="skill-desc">css3</li>
+						<li class="skill-desc">javascript</li>
+						<li class="skill-desc">jquery</li>
+					</ul>
+					<h4 class="list-title">colors</h4>
+					<ul class="color-list">
+						<li class="color mint"></li>
+						<li class="color violet"></li>
+						<li class="color salmon"></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -233,16 +298,18 @@
 				<div class="gallary-item" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
 					<img class="gallary-thumb" src="./img/diffuser_design.png" alt="diffuser design">
 				</div>
-				<div class="gallary-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-delay="500">
+				<div class="gallary-item" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+					data-aos-delay="500">
 					<img class="gallary-thumb" src="./img/illust_catwithflower.png" alt="cat with flower">
 				</div>
-				<div class="gallary-item" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom" data-aos-delay="1000">
-					<img class="gallary-thumb" src="./img/practice_57.png" alt="sun and mountain" >
+				<div class="gallary-item" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom"
+					data-aos-delay="1000">
+					<img class="gallary-thumb" src="./img/practice_57.png" alt="sun and mountain">
 				</div>
 			</div>
 			<div class="modal">
 				<span class="close">&times;</span>
-				<img class="gallary-img" src="./img/?.png" alt="none">
+				<img class="gallary-img" src="" alt="modal">
 			</div>
 		</div>
 	</section>
@@ -262,9 +329,7 @@
 	</section>
 	<footer>
 		<div class="container">
-			<p class="copyright">
-				Copyright © 2022 Chae Hyerin All Rights Reserved
-			</p>
+			<p class="copyright">Copyright © 2022 Chae Hyerin All Rights Reserved</p>
 		</div>
 		<a href="#" class="top on"></a>
 	</footer>
