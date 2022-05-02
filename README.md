@@ -1,15 +1,13 @@
 # **CHAE HYE RIN'S PORTFOLIO**
 
 ## **SITE LINK**   
----
 <br>
 
-### [https://sloth-hub.github.io/whattoeattoday/](https://sloth-hub.github.io/whattoeattoday/)
+### [https://sloth-hub.github.io](https://sloth-hub.github.io)
 
 <br/>
 
 ## **PREVIEW**   
----
 <br/>
 
 ### **PC**
@@ -18,7 +16,7 @@
 ![portfolio_2](https://user-images.githubusercontent.com/53851248/166231934-0d522330-3ddc-4e65-ab7c-63c19db9490a.png)
 ![portfolio_3](https://user-images.githubusercontent.com/53851248/166231937-81fb2581-61a9-4087-b59b-52ebf538af6c.png)
 ![portfolio_4](https://user-images.githubusercontent.com/53851248/166231938-c5ed8ef9-38a5-49d9-80bf-4413e67ca70a.png)
-![portfolio_5](https://user-images.githubusercontent.com/53851248/166231941-143f9729-5285-46c7-bf07-69b66c4daa55.png)
+![portfolio_5](https://user-images.githubusercontent.com/53851248/166254618-629bb2b7-22b4-470a-a79e-a297125ae93c.png)
 ![portfolio_6](https://user-images.githubusercontent.com/53851248/166231943-8de1be65-a2c1-4cd2-999e-ed5949f9f48d.png)
 
 ---
