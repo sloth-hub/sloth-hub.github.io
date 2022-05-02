@@ -1,7 +1,6 @@
 # **CHAE HYE RIN'S PORTFOLIO**
 
 ## **SITE LINK**   
----
 <br>
 
 ### [https://sloth-hub.github.io/whattoeattoday/](https://sloth-hub.github.io/whattoeattoday/)
@@ -9,7 +8,6 @@
 <br/>
 
 ## **PREVIEW**   
----
 <br/>
 
 ### **PC**
