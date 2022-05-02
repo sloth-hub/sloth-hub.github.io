@@ -10,6 +10,7 @@
 ## **PREVIEW**   
 <br/>
 
+---
 ### **PC**
 ---
 ![portfolio_1](https://user-images.githubusercontent.com/53851248/166231928-58489f82-c32a-4e33-b71b-88e30777237f.png)
