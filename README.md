@@ -3,7 +3,7 @@
 ## **SITE LINK**   
 <br>
 
-### [https://sloth-hub.github.io/whattoeattoday/](https://sloth-hub.github.io/whattoeattoday/)
+### [https://sloth-hub.github.io](https://sloth-hub.github.io)
 
 <br/>
 
