@@ -54,9 +54,8 @@ function clickedImage() {
 
     gallary.addEventListener("click", ({ target }) => {
         if (target.classList.contains("gallary-item")) {
-            $(modal).css({ "display": "flex", "align-items": "flex-start" })
-            .hide()
-            .fadeIn();
+            $(modal).css({ "display": "flex", "align-items": "center", "flex-wrap": "wrap"})
+            .hide().fadeIn();
             header.classList.remove("on");
             topbtn.classList.remove("on");
             body.style.overflow = "hidden";
