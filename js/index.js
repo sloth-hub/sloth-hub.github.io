@@ -58,6 +58,7 @@ function clickedImage() {
             .hide().fadeIn();
             header.classList.remove("on");
             topbtn.classList.remove("on");
+            closeBtn.classList.add("on");
             body.style.overflow = "hidden";
             modalImg.src = target.children[0].src;
             modalImg.alt = target.children[0].alt;
@@ -79,6 +80,7 @@ function zoomInImage() {
 function closedImage() {
 
     closeBtn.addEventListener("click", () => {
+        closeBtn.classList.remove("on");
         modalImg.classList.remove("zoom");
         body.style.overflow = "overlay";
         header.classList.add("on");

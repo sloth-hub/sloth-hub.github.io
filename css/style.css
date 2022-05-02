@@ -628,6 +628,7 @@ section#contact {
 }
 
 #works .close {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -637,6 +638,10 @@ section#contact {
     cursor: pointer;
     z-index: 3;
     text-shadow: 0 0 10px rgb(153 153 153 / 70%);
+}
+
+#works .close.on {
+    display: block;
 }
 
 #works .modal .gallary-img {
