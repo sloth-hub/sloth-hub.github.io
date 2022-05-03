@@ -14,9 +14,9 @@
 ### **PC**
 ---
 ![portfolio_1](https://user-images.githubusercontent.com/53851248/166446841-bca0802e-c87b-49ba-88d7-7de8984d7dc9.png)
-![portfolio_2](https://user-images.githubusercontent.com/53851248/166447421-661949ca-75d6-4fa0-91a2-044a9eece7c6.png)
+![portfolio_2](https://user-images.githubusercontent.com/53851248/166448668-11c7f123-ca39-44ba-b529-2aa30b5eeb3f.png)
 ![portfolio_3](https://user-images.githubusercontent.com/53851248/166448332-195158a2-a140-4275-b411-4e0254b38ea5.png)
-![portfolio_4](https://user-images.githubusercontent.com/53851248/166448320-05a6b691-f797-473e-9549-eafc5d636f3a.png)
+![portfolio_4](https://user-images.githubusercontent.com/53851248/166448674-a4e4aff2-0a56-4e8f-941a-a4eb1ececb01.png)
 ![portfolio_5](https://user-images.githubusercontent.com/53851248/166448323-e5db7037-e0a1-4ece-bd32-7bc0da606d0c.png)
 ![portfolio_6](https://user-images.githubusercontent.com/53851248/166448325-976f3673-a03e-4a7a-a5c5-9087b929e493.png)
 
