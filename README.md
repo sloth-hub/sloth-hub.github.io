@@ -13,7 +13,7 @@
 ---
 ### **PC**
 ---
-![portfolio_1](https://user-images.githubusercontent.com/53851248/166231928-58489f82-c32a-4e33-b71b-88e30777237f.png)
+![portfolio_1](https://user-images.githubusercontent.com/53851248/166446841-bca0802e-c87b-49ba-88d7-7de8984d7dc9.png)
 ![portfolio_2](https://user-images.githubusercontent.com/53851248/166231934-0d522330-3ddc-4e65-ab7c-63c19db9490a.png)
 ![portfolio_3](https://user-images.githubusercontent.com/53851248/166231937-81fb2581-61a9-4087-b59b-52ebf538af6c.png)
 ![portfolio_4](https://user-images.githubusercontent.com/53851248/166231938-c5ed8ef9-38a5-49d9-80bf-4413e67ca70a.png)
