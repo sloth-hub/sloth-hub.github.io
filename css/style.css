@@ -1052,6 +1052,10 @@ footer .copyright {
         margin: 20px 0;
     }
 
+    #projects .content-right {
+        width: 100%;
+    }
+
     #works .gallary {
         flex-direction: column;
         justify-content: flex-start;
