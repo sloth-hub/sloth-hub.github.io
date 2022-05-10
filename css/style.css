@@ -1080,6 +1080,10 @@ footer .copyright {
         bottom: 28%;
     }
 
+    #contact .card {
+        padding: 30px;
+    }
+
 }
 
 /* keyframes */
