@@ -538,6 +538,18 @@ section#contact {
     background-color: #ffaa97;
 }
 
+#projects .color-list .color.kellogg {
+    background-color: #ba0c2f;
+}
+
+#projects .color-list .color.kellogg_black {
+    background-color: #2B2B2B;
+}
+
+#projects .color-list .color.white {
+    background-color: #fff;
+}
+
 /* works */
 
 #works .gallary {
@@ -558,7 +570,7 @@ section#contact {
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0px 20px 20px 0px rgb(153 153 153 / 30%);
-    transition: box-shadow .2s linear, transform .2s linear;
+    transition: all .2s linear;
     border: 1px solid rgba(255, 255, 255, 0.1);
     box-sizing: content-box;
 }
