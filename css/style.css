@@ -14,6 +14,11 @@ body {
     color: #777777;
     overflow: overlay;
     overflow-x: hidden;
+    background: linear-gradient(60deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4, #ffaa97);
+    background-size: 500% 500%;
+    -webkit-animation: gradient 30s ease infinite;
+    -moz-animation: gradient 30s ease infinite;
+    animation: gradient 30s ease infinite;
 }
 
 ul, li, p {
@@ -52,6 +57,7 @@ h2 {
     font-weight: 700;
     margin-bottom: 120px;
     text-align: center;
+    color: #fff;
 }
 
 h3, .list-title {
@@ -116,7 +122,7 @@ a.top.on {
 .header-wrap.on .nav-logotext {
     font-weight: 900;
     color: transparent;
-    background: linear-gradient(69deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
+    background: linear-gradient(60deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4, #ffaa97);
     background-size: 800% 800%;
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
@@ -204,85 +210,127 @@ a.top.on {
 
 /* sections */
 
+section {
+    height: 100vh;
+}
+
 section+section {
     padding: 180px 0;
 }
 
-section#home, section#contact {
-    position: relative;
-    z-index: 1;
-    background: linear-gradient(69deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
-    background-size: 800% 800%;
-    -webkit-animation: gradient 30s ease infinite;
-    -moz-animation: gradient 30s ease infinite;
-    animation: gradient 30s ease infinite;
+section#projects {
+    background-color: #fff;
 }
 
 section#skills, section#works {
     background-color: #f1f1f1;
-    padding: 210px 0;
 }
 
-section#about {
-    padding: 240px 0 300px;
+section#skills, section#projects, section#works {
+    height: 100%;
+}
+
+section#projects h2, section#skills h2, section#works h2 {
+    color: #777777;
 }
 
 section#contact {
     padding-bottom: 225px;
 }
 
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: saturate(150%) blur(20px);
+    box-shadow: 0px 20px 20px 0px rgb(153 153 153 / 10%);
+}
+
 /* home */
 
 #home {
-    margin-bottom: 200px;
+    position: relative;
+    top: 120px;
 }
 
 #home .container {
     position: relative;
-    border-radius: 20px;
-    padding: 50px;
-    bottom: -160px;
-    min-height: 610px;
-    border: 1px solid rgba(255, 255, 255, 0.4);
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: saturate(150%) blur(20px);
-    box-shadow: 0px 20px 80px 0px rgb(153 153 153 / 30%);
     transition: all 0.3s ease;
 }
 
 #home .inner {
-    display: flex;
     width: 100%;
-    min-height: 610px;
 }
 
-#home .content,
-#projects .content {
-    align-items: center;
+#home .content {
+    align-items: flex-end;
+    padding-top: 50px;
 }
 
-#home .content-right .home-text {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#home .home-text {
+    white-space: nowrap;
+}
+
+#home h1, #home h2 {
+    position: relative;
+    color: #fff;
 }
 
 #home h1 {
-    font-size: 4.6rem;
-    margin-bottom: 10px;
+    top: 2px;
+    left: -281px;
+    font-size: 6rem;
+    letter-spacing: 1rem;
+    line-height: 87px;
+    font-weight: 900;
+    color: #fff;
 }
 
-#home h3 {
-    font-size: 1.8rem;
+#home h2 {
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: transparent;
+    left: 60px;
+    font-weight: 900;
+    letter-spacing: 1.4rem;
+    text-align: left;
+    margin-bottom: 0;
 }
 
+/* 
 #home p {
+    color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 2.5rem;
+} */
+
+#home .frame {
+    overflow: hidden;
 }
 
+#home .frame::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    left: 60px;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+}
+
+
 /* about */
+
+#about {
+    position: relative;
+    height: 100%;
+    padding: 0;
+    padding-top: 160px;
+    top: 160px;
+}
 
 #about .content {
     justify-content: space-between;
@@ -295,10 +343,8 @@ section#contact {
 
 #about .content ul,
 #projects .content {
-    border: 1px solid #eeeeee;
     padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0px 20px 20px 0px rgb(153 153 153 / 10%);
+    z-index: 1;
 }
 
 #about .content ul+ul {
@@ -318,6 +364,7 @@ section#contact {
     display: flex;
     align-items: center;
     font-size: 1rem;
+    color: #777777;
 }
 
 #about .education li,
@@ -354,6 +401,10 @@ section#contact {
 }
 
 /* skills */
+
+#skills {
+    padding-top: 380px;
+}
 
 #skills .chart-wrap {
     display: flex;
@@ -422,6 +473,7 @@ section#contact {
 
 #projects .content {
     padding: 30px;
+    border: 1px solid #eeeeee;
 }
 
 #projects .content+.content {
@@ -434,6 +486,9 @@ section#contact {
 }
 
 #projects .content-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     padding-left: 50px;
 }
 
@@ -699,11 +754,7 @@ section#contact {
 
 #contact .card {
     padding: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
-    background-color: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 20px 20px 0 rgb(153 153 153 / 10%);
-    backdrop-filter: saturate(150%);
 }
 
 #contact .card li {
@@ -850,7 +901,7 @@ footer .copyright {
         height: 300px;
         border-radius: 50%;
         border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 0 20px 0px rgb(153 153 153 / 50%);
+        box-shadow: 5px 5px 20px 0px rgb(153 153 153 / 50%);
         overflow: hidden;
     }
 
@@ -858,9 +909,11 @@ footer .copyright {
         width: 100%;
         top: -20px;
     }
+
     #home .content-right .name {
         padding-left: 20px;
     }
+
     #home .content-right .home-text {
         flex-direction: column;
     }
@@ -895,8 +948,8 @@ footer .copyright {
     }
 
     #works .gallary .gallary-item {
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 300px;
     }
 
     #works .gallary .gallary-item {
