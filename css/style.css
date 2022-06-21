@@ -199,7 +199,6 @@ a.top.on {
 .header-wrap.on .nav-link {
     line-height: 70px;
     color: #777;
-
 }
 
 .nav-menu .nav-item .nav-link:hover:not(.actvie),
@@ -267,12 +266,23 @@ section#contact {
     padding-top: 50px;
 }
 
-#home .frame {
-    width: max-content;
+#home .content-left::after {
+    content: "";
+    display: flex;
+    position: absolute;
+    left: 60px;
+    top: 40px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(20px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: -1;
+    transition: all 0.3s ease;
 }
 
-#home .frame img {
-    width: 100%;
+#home .content-left img {
+    width: max-content;
+    transition: all 0.3s ease;
 }
 
 #home .home-text {
@@ -305,28 +315,6 @@ section#contact {
     margin-bottom: 0;
 }
 
-/* 
-#home p {
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 2.5rem;
-} */
-
-#home .frame::after {
-    content: "";
-    display: flex;
-    position: absolute;
-    left: 60px;
-    top: 40px;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(20px) saturate(200%);
-    background-color: rgba(255, 255, 255, 0.3);
-    z-index: -1;
-}
-
-
 /* about */
 
 #about {
@@ -343,6 +331,7 @@ section#contact {
     left: 0;
     bottom: 0;
     background-color: #fff;
+    transition: all 0.3s ease;
 }
 
 #about .content {
@@ -833,7 +822,7 @@ footer .copyright {
         max-width: 960px;
     }
 
-    #home .frame {
+    #home .content-left img {
         width: 500px;
     }
 
@@ -898,37 +887,36 @@ footer .copyright {
 
     #home .content {
         flex-direction: column;
-        justify-content: space-around;
-    }
-
-    #home .content-left {
-        justify-content: center;
-    }
-
-    #home .content-left .frame {
-        width: 300px;
-        height: 300px;
-        border-radius: 50%;
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 5px 5px 20px 0px rgb(153 153 153 / 50%);
-        overflow: hidden;
+        align-items: flex-start;
     }
 
     #home .content-left img {
-        width: 100%;
-        top: -20px;
+        width: 450px;
     }
 
-    #home .content-right .name {
-        padding-left: 20px;
+    #home .content-right {
+        align-self: normal;
     }
 
-    #home .content-right .home-text {
+    #home .home-text {
+        position: relative;
+        display: flex;
         flex-direction: column;
     }
 
-    #home .content-right p {
-        text-align: center;
+    #home h1, #home h2 {
+        position: initial;
+    }
+
+    #home h1 {
+        letter-spacing: 1.27rem;
+    }
+
+    #home h2 {
+        right: -18px;
+        left: initial;
+        align-self: flex-end;
+        position: relative;
     }
 
     #about .container {
@@ -971,13 +959,7 @@ footer .copyright {
     }
 
     #works .gallary .gallary-item::before {
-        font-size: 3em;
-        line-height: 200px;
         padding-top: 0;
-    }
-
-    #works .gallary .gallary-item:first-child .caption {
-        bottom: 19%;
     }
 
     #works .gallary .caption {
@@ -1000,7 +982,6 @@ footer .copyright {
         height: auto;
     }
 
-
 }
 
 /* mobile */
@@ -1011,12 +992,8 @@ footer .copyright {
         max-width: 560px;
     }
 
-    h2 {
-        margin-bottom: 100px;
-    }
-
     section#about, section#skills, section#works {
-        padding: 180px 0;
+        padding: 120px 0;
     }
 
     /* mobile navbar */
@@ -1096,26 +1073,28 @@ footer .copyright {
         padding-bottom: 140px;
     }
 
-    #home .container {
-        bottom: -80px;
-        border: none;
-        background-color: transparent;
-        backdrop-filter: unset;
-        box-shadow: none;
-    }
-
-    #home .content {
-        color: #fff;
-        text-shadow: 0 0 10px rgb(153 153 153 / 50%);
+    #home .content-left img {
+        width: 470px;
     }
 
     #home .content-right .name {
         padding-top: 20px;
     }
 
-    #about .container,
-    #projects .container {
-        padding: 0 30px;
+    #home h1 {
+        letter-spacing: 0.27rem;
+    }
+
+    #about .container, #projects .container {
+        padding: 0 15px;
+    }
+
+    #about {
+        height: 100%;
+    }
+
+    #about::after {
+        height: 67%;
     }
 
     #about .content {
@@ -1161,6 +1140,55 @@ footer .copyright {
 
     #contact .card {
         padding: 30px;
+    }
+
+}
+
+/* mobile(xs) */
+@media (max-width: 576px) {
+
+    #home .inner {
+        display: flex;
+        justify-content: center;
+    }
+
+    #home .content {
+        width: 100%;
+    }
+
+    #home .content-left::after {
+        left: 0;
+        top: 0;
+    }
+
+    #home .content-left img {
+        width: 100%;
+    }
+
+    #home h1, #home h2 {
+        position: absolute;
+        backdrop-filter: blur(20px) saturate(200%);
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    #home h1 {
+        left: 0;
+        font-size: 9vw;
+        line-height: 15vw;
+        padding: 0 5px 0 10px;
+    }
+
+    #home h2 {
+        font-size: 6vw;
+        line-height: 10vw;
+        letter-spacing: 2vw;
+        right: 0;
+        bottom: 0;
+        padding: 0 5px 0 15px;
+    }
+
+    #skills {
+        height: 100%;
     }
 
 }
