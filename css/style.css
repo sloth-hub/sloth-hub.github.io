@@ -152,7 +152,7 @@ a.top.on {
 
 a.top.on {
     position: fixed;
-    right: 10px;
+    right: 15px;
     bottom: -40px;
     width: 2.5rem;
     height: 2.5rem;
@@ -297,9 +297,9 @@ section#contact {
 
 #home h1 {
     top: 2px;
-    left: -281px;
+    left: -270px;
     font-size: 6rem;
-    letter-spacing: 1rem;
+    letter-spacing: 0.92rem;
     line-height: 5.4rem;
     font-weight: 900;
     color: #fff;
@@ -770,6 +770,7 @@ section#contact {
     letter-spacing: 0.3rem;
     line-height: 3rem;
     cursor: default;
+    transition: all 0.3s ease;
 }
 
 #contact .card li::before {
@@ -827,16 +828,16 @@ footer .copyright {
     }
 
     #home h1 {
-        top: 1px;
+        top: 0;
         left: -218px;
-        font-size: 4.5rem;
+        font-size: 4.62rem;
         line-height: 4rem;
         white-space: nowrap;
     }
 
     #home h2 {
-        left: 26px;
-        letter-spacing: 1rem;
+        left: 21px;
+        letter-spacing: 1.03rem;
     }
 
     /* about */
@@ -900,6 +901,7 @@ footer .copyright {
 
     #home .home-text {
         position: relative;
+        top: -33px;
         display: flex;
         flex-direction: column;
     }
@@ -909,7 +911,8 @@ footer .copyright {
     }
 
     #home h1 {
-        letter-spacing: 1.27rem;
+        letter-spacing: 1.18rem;
+        line-height: 4.6rem;
     }
 
     #home h2 {
@@ -1077,12 +1080,13 @@ footer .copyright {
         width: 470px;
     }
 
-    #home .content-right .name {
-        padding-top: 20px;
+    #home .home-text {
+        top: 5px;
     }
 
     #home h1 {
-        letter-spacing: 0.27rem;
+        letter-spacing: 0.19rem;
+        line-height: 4.5rem;
     }
 
     #about .container, #projects .container {
@@ -1147,6 +1151,10 @@ footer .copyright {
 /* mobile(xs) */
 @media (max-width: 576px) {
 
+    #home .container {
+        height: 100%;
+    }
+
     #home .inner {
         display: flex;
         justify-content: center;
@@ -1163,6 +1171,10 @@ footer .copyright {
 
     #home .content-left img {
         width: 100%;
+    }
+
+    #home .home-text {
+        top: 0;
     }
 
     #home h1, #home h2 {
@@ -1189,6 +1201,26 @@ footer .copyright {
 
     #skills {
         height: 100%;
+    }
+
+    #works .gallary .gallary-item {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    #contact .card {
+        padding: 20px;
+        width: 100%;
+        max-width: 370px;
+        min-height: 206px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #contact .card li {
+        overflow-wrap: anywhere;
+        line-height: 2rem;
     }
 
 }
