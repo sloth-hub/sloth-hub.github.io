@@ -31,7 +31,7 @@ function scrollHeader() {
 function skillsScrollAnimate() {
     window.addEventListener('scroll', function () {
         const skills = document.querySelectorAll("circle.skillbar");
-        if (window.scrollY >= 1500 && window.scrollY <= 2800) {
+        if (window.scrollY >= 1500 && window.scrollY <= 2650) {
             skills.forEach((e) => {
                 e.classList.add("circle_animation");
             });
