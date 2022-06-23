@@ -14,7 +14,7 @@ body {
     color: #777777;
     overflow: overlay;
     overflow-x: hidden;
-    background: linear-gradient(60deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4, #ffaa97);
+    background: linear-gradient(69deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
     background-size: 500% 500%;
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
@@ -122,7 +122,7 @@ a.top.on {
 .header-wrap.on .nav-logotext {
     font-weight: 900;
     color: transparent;
-    background: linear-gradient(60deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4, #ffaa97);
+    background: linear-gradient(69deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
     background-size: 800% 800%;
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
@@ -286,32 +286,32 @@ section#contact {
 }
 
 #home .home-text {
-    white-space: nowrap;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: -7px;
+    bottom: -2px;
 }
 
 #home h1, #home h2 {
     position: relative;
     color: #fff;
     width: fit-content;
+    align-self: flex-end;
 }
 
 #home h1 {
-    top: 2px;
-    left: -270px;
     font-size: 6rem;
-    letter-spacing: 0.92rem;
+    letter-spacing: 0.96rem;
     line-height: 5.4rem;
     font-weight: 900;
-    color: #fff;
 }
 
 #home h2 {
     -webkit-text-stroke: 1px #fff;
     -webkit-text-fill-color: transparent;
-    left: 60px;
     font-weight: 900;
-    letter-spacing: 1.4rem;
-    text-align: left;
+    letter-spacing: 1.2rem;
     margin-bottom: 0;
 }
 
@@ -827,17 +827,19 @@ footer .copyright {
         width: 500px;
     }
 
+    #home .home-text {
+        bottom: 0;
+    }
+
     #home h1 {
-        top: 0;
-        left: -218px;
-        font-size: 4.62rem;
+        font-size: 4.59rem;
         line-height: 4rem;
         white-space: nowrap;
     }
 
     #home h2 {
-        left: 21px;
-        letter-spacing: 1.03rem;
+        letter-spacing: 0.65rem;
+        right: 10px;
     }
 
     /* about */
@@ -901,25 +903,19 @@ footer .copyright {
 
     #home .home-text {
         position: relative;
-        top: -33px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #home h1, #home h2 {
-        position: initial;
+        top: -27px;
+        right: -20px;
     }
 
     #home h1 {
-        letter-spacing: 1.18rem;
-        line-height: 4.6rem;
+        letter-spacing: 0.86rem;
+        line-height: 4rem;
     }
 
     #home h2 {
-        right: -18px;
-        left: initial;
-        align-self: flex-end;
-        position: relative;
+        right: -3px;
+        letter-spacing: 1.34rem;
+        line-height: 3.6rem;
     }
 
     #about .container {
@@ -1081,12 +1077,17 @@ footer .copyright {
     }
 
     #home .home-text {
-        top: 5px;
+        top: 7px;
+        right: 0;
     }
 
     #home h1 {
-        letter-spacing: 0.19rem;
-        line-height: 4.5rem;
+        letter-spacing: 0.17rem;
+        line-height: 4rem;
+    }
+
+    #home h2 {
+        letter-spacing: 0.65rem;
     }
 
     #about .container, #projects .container {
