@@ -14,8 +14,8 @@ body {
     color: #777777;
     overflow: overlay;
     overflow-x: hidden;
-    background: linear-gradient(69deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
-    background-size: 500% 500%;
+    background: linear-gradient(85deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
+    background-size: 400% 400%;
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite;
@@ -122,7 +122,7 @@ a.top.on {
 .header-wrap.on .nav-logotext {
     font-weight: 900;
     color: transparent;
-    background: linear-gradient(69deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
+    background: linear-gradient(85deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
     background-size: 800% 800%;
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
@@ -1105,6 +1105,11 @@ footer .copyright {
     #about .content {
         flex-direction: column;
         font-size: 1rem;
+    }
+
+    #about .content ul {
+        padding-bottom: 30px;
+        border: 1px solid rgba(238, 238, 238, 0.4);
     }
 
     #about .content ul+ul {
