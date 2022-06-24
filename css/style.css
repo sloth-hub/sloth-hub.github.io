@@ -179,7 +179,7 @@ a.top.on {
 
 .nav-logo .nav-logotext {
     vertical-align: middle;
-    font-size: 1.2rem;
+    font-size: 19.2px;
     font-weight: 700;
     color: #fff;
 }
@@ -225,7 +225,7 @@ section#skills, section#works {
     background-color: #f1f1f1;
 }
 
-section#projects, section#works {
+#section#home, section#projects, section#works {
     height: 100%;
 }
 
@@ -850,11 +850,6 @@ footer .copyright {
 
     /* projcets */
 
-    #projects .container {
-        padding-left: 100px;
-        padding-right: 100px;
-    }
-
     #projects .cards>li {
         padding: 50px;
     }
@@ -924,11 +919,6 @@ footer .copyright {
 
     #skills .skill-chart {
         margin: 5px;
-    }
-
-    #projects .container {
-        padding-left: 0;
-        padding-right: 0;
     }
 
     #projects .cards>li {
@@ -1069,7 +1059,10 @@ footer .copyright {
 
     #home {
         margin-bottom: 0;
-        padding-bottom: 140px;
+        padding-bottom: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     #home .content-left img {
