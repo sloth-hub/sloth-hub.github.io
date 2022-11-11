@@ -564,6 +564,10 @@ section#contact {
     padding: 5px;
 }
 
+#projects .skill-desc:nth-child(6) {
+    margin-left: 0;
+}
+
 #projects .color-list {
     flex-wrap: nowrap;
 }
@@ -610,6 +614,14 @@ section#contact {
     background-color: #fff;
 }
 
+#projects .color-list .color.cvsnew_main {
+    background-color: #4BCFE5;
+}
+
+#projects .color-list .color.cvsnew_sub {
+    background-color: #f1d950;
+}
+
 /* works */
 
 #works .gallary {
@@ -636,12 +648,7 @@ section#contact {
 }
 
 #works .gallary .gallary-item::before {
-    content: "\e8ff";
-    font-family: 'Material Symbols Rounded';
-    font-size: 5rem;
-    text-align: center;
-    line-height: 300px;
-    color: #fff;
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -652,6 +659,20 @@ section#contact {
     backdrop-filter: saturate(150%) blur(20px);
     background-color: rgba(238, 238, 238, 0.4);
     text-shadow: 0 1px 15px rgb(153 153 153 / 30%);
+    opacity: 0;
+    transition: all 0.1s linear;
+}
+
+#works .gallary .gallary-item::after {
+    content: "\e8ff";
+    font-family: 'Material Symbols Rounded';
+    position: absolute;
+    top: 110px;
+    left: 0;
+    color: #fff;
+    width: 100%;
+    font-size: 5rem;
+    text-align: center;
     opacity: 0;
     transition: all 0.1s linear;
 }
@@ -938,21 +959,22 @@ footer .copyright {
         width: 100%;
     }
 
+    #projects .skill-desc:nth-child(6) {
+        margin-left: 5px;
+    }
+
     #works .gallary .gallary-item {
         width: 300px;
         height: 300px;
-    }
-
-    #works .gallary .gallary-item {
         margin: 15px;
     }
 
-    #works .gallary .gallary-item::before {
-        padding-top: 0;
+    #works .gallary .gallary-item::after {
+        top: 90px;
     }
 
     #works .gallary .caption {
-        bottom: 30%;
+        bottom: 35%;
     }
 
     #works .modal {
@@ -1117,6 +1139,10 @@ footer .copyright {
         width: 100%;
     }
 
+    #projects .skill-desc:nth-child(7) {
+        margin-left: 0px;
+    }
+
     #works .gallary {
         flex-direction: column;
         justify-content: flex-start;
@@ -1132,13 +1158,8 @@ footer .copyright {
         height: 348px;
     }
 
-    #works .gallary .gallary-item::before {
-        font-size: 5rem;
-        line-height: 350px;
-    }
-
-    #works .gallary .gallary-item:first-child .caption {
-        bottom: 28%;
+    #works .gallary .gallary-item::after {
+        top: 120px;
     }
 
     #contact .card {
@@ -1202,9 +1223,32 @@ footer .copyright {
         height: 100%;
     }
 
+    #projects .cards>li {
+        padding: 25px 25px 30px;
+    }
+
+    #projects .skill-list {
+        margin-left: -5px;
+    }
+
+    #projects .skill-desc:nth-child(n) {
+        margin-left: 5px;
+    }
+
     #works .gallary .gallary-item {
         max-width: 250px;
         max-height: 250px;
+    }
+
+    #works .gallary .gallary-item::after {
+        top: 60px;
+        left: 5px;
+    }
+
+    
+    #works .gallary .gallary-item:first-child .caption {
+        padding: 0 45px;
+        bottom: 25%;
     }
 
     #contact .card {
