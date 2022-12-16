@@ -263,18 +263,20 @@ section#contact {
 
 #home .content {
     align-items: flex-end;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 
 #home .content-left::after {
     content: "";
     display: flex;
     position: absolute;
-    left: 60px;
-    top: 40px;
+    left: 50px;
+    top: 227px;
     width: 100%;
-    height: 100%;
-    backdrop-filter: blur(20px) saturate(200%);
+    height: 46%;
+    border-radius: 50%;
+    transform: rotate(-25deg);
+    backdrop-filter: saturate(200%);
     background-color: rgba(255, 255, 255, 0.3);
     z-index: -1;
     transition: all 0.3s ease;
@@ -283,6 +285,7 @@ section#contact {
 #home .content-left img {
     width: max-content;
     transition: all 0.3s ease;
+    transform: rotate(-25deg);
 }
 
 #home .home-text {
@@ -848,6 +851,11 @@ footer .copyright {
         width: 500px;
     }
 
+    #home .content-left::after {
+        top: 200px;
+        left: 43px;
+    }
+
     #home .home-text {
         bottom: 0;
     }
@@ -911,6 +919,11 @@ footer .copyright {
 
     #home .content-left img {
         width: 450px;
+    }
+
+    #home .content-left::after {
+        top: 182px;
+        left: 40px;
     }
 
     #home .content-right {
@@ -1008,6 +1021,11 @@ footer .copyright {
     }
 
     /* mobile navbar */
+
+    #home .content-left::after {
+        top: 188px;
+        left: 41px;
+    }
 
     .header-wrap {
         height: 72px;
@@ -1178,19 +1196,22 @@ footer .copyright {
     #home .inner {
         display: flex;
         justify-content: center;
+        align-items: center;
+        height: 100%;
     }
 
     #home .content {
         width: 100%;
+        padding-top: 0;
     }
 
     #home .content-left::after {
-        left: 0;
-        top: 0;
+        width: 0;
     }
 
     #home .content-left img {
         width: 100%;
+        margin-left: -20px;
     }
 
     #home .home-text {
@@ -1245,7 +1266,7 @@ footer .copyright {
         left: 5px;
     }
 
-    
+
     #works .gallary .gallary-item:first-child .caption {
         padding: 0 45px;
         bottom: 25%;
