@@ -6,6 +6,7 @@
 }
 
 body {
+    position: relative;
     margin: 0;
     padding: 0;
     font-size: 14px;
@@ -19,6 +20,21 @@ body {
     -webkit-animation: gradient 30s ease infinite;
     -moz-animation: gradient 30s ease infinite;
     animation: gradient 30s ease infinite;
+}
+
+body:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    mix-blend-mode: hard-light;
+    background-repeat: repeat;
+    background-position: center center;
+    background-image: url(https://grainy-gradients.vercel.app/noise.svg);
+    opacity: 0.5;
 }
 
 ul, li, p {
@@ -255,6 +271,10 @@ section#contact {
 #home .container {
     position: relative;
     transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
 }
 
 #home .inner {
@@ -262,38 +282,24 @@ section#contact {
 }
 
 #home .content {
-    align-items: flex-end;
-    padding-top: 150px;
-}
-
-#home .content-left::after {
-    content: "";
-    display: flex;
-    position: absolute;
-    left: 50px;
-    top: 227px;
-    width: 100%;
-    height: 46%;
-    border-radius: 50%;
-    transform: rotate(-25deg);
-    backdrop-filter: saturate(200%);
-    background-color: rgba(255, 255, 255, 0.3);
-    z-index: -1;
-    transition: all 0.3s ease;
+    flex-direction: column;
 }
 
 #home .content-left img {
     width: max-content;
     transition: all 0.3s ease;
-    transform: rotate(-25deg);
+}
+
+#home .content-right {
+    position: relative;
+    bottom: 90px;
+    right: -22px;
 }
 
 #home .home-text {
+    width: fit-content;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: -7px;
-    bottom: -2px;
 }
 
 #home h1, #home h2 {
@@ -851,13 +857,9 @@ footer .copyright {
         width: 500px;
     }
 
-    #home .content-left::after {
-        top: 200px;
-        left: 43px;
-    }
-
-    #home .home-text {
-        bottom: 0;
+    #home .content-right {
+        bottom: 90px;
+        right: -22px;
     }
 
     #home h1 {
@@ -912,39 +914,13 @@ footer .copyright {
         justify-content: space-between;
     }
 
-    #home .content {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     #home .content-left img {
         width: 450px;
-    }
-
-    #home .content-left::after {
-        top: 182px;
-        left: 40px;
-    }
-
-    #home .content-right {
-        align-self: normal;
-    }
-
-    #home .home-text {
-        position: relative;
-        top: -27px;
-        right: -20px;
     }
 
     #home h1 {
         letter-spacing: 0.86rem;
         line-height: 4rem;
-    }
-
-    #home h2 {
-        right: -3px;
-        letter-spacing: 1.34rem;
-        line-height: 3.6rem;
     }
 
     #about .container {
@@ -1021,11 +997,6 @@ footer .copyright {
     }
 
     /* mobile navbar */
-
-    #home .content-left::after {
-        top: 188px;
-        left: 41px;
-    }
 
     .header-wrap {
         height: 72px;
@@ -1109,9 +1080,8 @@ footer .copyright {
         width: 470px;
     }
 
-    #home .home-text {
-        top: 7px;
-        right: 0;
+    #home .content-right {
+        bottom: 32px;
     }
 
     #home h1 {
@@ -1120,7 +1090,8 @@ footer .copyright {
     }
 
     #home h2 {
-        letter-spacing: 0.65rem;
+        line-height: 3.2rem;
+        right: 0;
     }
 
     #about .container, #projects .container {
@@ -1190,7 +1161,7 @@ footer .copyright {
 @media (max-width: 576px) {
 
     #home .container {
-        height: 100%;
+        padding-top: 0;
     }
 
     #home .inner {
@@ -1200,44 +1171,33 @@ footer .copyright {
         height: 100%;
     }
 
-    #home .content {
+    #home .content-left {
+        position: relative;
         width: 100%;
-        padding-top: 0;
-    }
-
-    #home .content-left::after {
-        width: 0;
     }
 
     #home .content-left img {
         width: 100%;
-        margin-left: -20px;
+    }
+
+    #home .content-right {
+        right: 0;
+        bottom: 10px;
     }
 
     #home .home-text {
-        top: 0;
-    }
-
-    #home h1, #home h2 {
-        position: absolute;
-        backdrop-filter: blur(20px) saturate(200%);
-        background-color: rgba(255, 255, 255, 0.3);
+        width: auto;
     }
 
     #home h1 {
-        left: 0;
-        font-size: 9vw;
-        line-height: 15vw;
-        padding: 0 5px 0 10px;
+        font-size: 12vw;
+        line-height: 12vw;
     }
-
+    
     #home h2 {
-        font-size: 6vw;
-        line-height: 10vw;
+        font-size: 8vw;
+        line-height: 11vw;
         letter-spacing: 2vw;
-        right: 0;
-        bottom: 0;
-        padding: 0 5px 0 15px;
     }
 
     #skills {
