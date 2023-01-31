@@ -13,7 +13,7 @@ body {
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 300;
     color: #777777;
-    overflow: overlay;
+    overflow-y: overlay;
     overflow-x: hidden;
     background: linear-gradient(85deg, #97ffe4, #ffaa97, #ac97ff, #97ffe4);
     background-size: 400% 400%;
@@ -1126,11 +1126,6 @@ footer .copyright {
     /* mobile navbar */
 
     .header-wrap {
-        height: 72px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-        background-color: rgba(255, 255, 255, 0.3);
-        backdrop-filter: saturate(150%) blur(30px);
-        box-shadow: 0px 3px 10px 0px rgb(153 153 153 / 10%);
         transition: 0.3s ease;
     }
 
@@ -1139,24 +1134,24 @@ footer .copyright {
     }
 
     .nav-menu {
-        display: none;
-    }
-
-    .nav-menu.show {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         top: 72px;
         width: 100%;
         position: fixed;
-    }
-
-    .nav-menu.show .nav-item+.nav-item {
-        margin-left: 0;
+        opacity: 0;
+        visibility: hidden;
+        animation: unvisible 0.1s ease forwards;
     }
 
     .nav-menu.show {
-        animation: visible 2s ease;
+        visibility: visible;
+        animation: visible 1s ease forwards;
+    }
+
+    .nav-menu .nav-item+.nav-item {
+        margin-left: 0;
     }
 
     @keyframes visible {
@@ -1166,6 +1161,16 @@ footer .copyright {
 
         to {
             opacity: 1;
+        }
+    }
+
+    @keyframes unvisible {
+        from {
+            opacity: 1;
+        }
+
+        to {
+            opacity: 0;
         }
     }
 
