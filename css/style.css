@@ -185,6 +185,8 @@ a.top.on {
 
 .top.on::after {
     content: "\e316";
+    position: relative;
+    top: -1px;
 }
 
 .nav-menu {
@@ -1405,7 +1407,6 @@ footer .copyright {
 @media (max-width: 576px) {
     #home {
         padding-top: 72px;
-        border-bottom: 1px solid #000;
     }
 
     #home .content {
