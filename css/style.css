@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     position: relative;
     margin: 0;
@@ -237,6 +241,11 @@ section+section {
 
 section#projects {
     background-color: #fff;
+}
+
+
+section#skills, section#contact {
+    height: 100%;
 }
 
 section#skills, section#works {
@@ -579,31 +588,30 @@ section#contact {
 }
 
 .skill-chart.html .circle_animation {
-    -webkit-animation: html 1s ease-out forwards;
-    animation: html 1s ease-out forwards;
+    -webkit-animation: ninety 1s ease-out forwards;
+    animation: ninety 1s ease-out forwards;
 }
 
 .skill-chart.css .circle_animation {
-    -webkit-animation: css 1s ease-out forwards;
-    animation: css 1s ease-out forwards;
+    -webkit-animation: eighty 1s ease-out forwards;
+    animation: eighty 1s ease-out forwards;
 }
 
-.skill-chart.illustrator .circle_animation {
-    -webkit-animation: illust 1s ease-out forwards;
-    animation: illust 1s ease-out forwards;
+.skill-chart.illustrator .circle_animation,
+.skill-chart.javascript .circle_animation {
+    -webkit-animation: seventy-five 1s ease-out forwards;
+    animation: seventy-five 1s ease-out forwards;
 }
 
-
-.skill-chart.jquery .circle_animation,
-.skill-chart.photoshop .circle_animation {
-    -webkit-animation: jqueryptshop 1s ease-out forwards;
-    animation: jqueryptshop 1s ease-out forwards;
+.skill-chart.photoshop .circle_animation,
+.skill-chart.react .circle_animation  {
+    -webkit-animation: seventy 1s ease-out forwards;
+    animation: seventy 1s ease-out forwards;
 }
 
-.skill-chart.javascript .circle_animation,
-.skill-chart.react .circle_animation {
-    -webkit-animation: jsreact 1s ease-out forwards;
-    animation: jsreact 1s ease-out forwards;
+.skill-chart.jquery .circle_animation {
+    -webkit-animation: sixty 1s ease-out forwards;
+    animation: sixty 1s ease-out forwards;
 }
 
 /* projects */
@@ -1549,73 +1557,69 @@ footer .copyright {
     }
 }
 
-@keyframes html {
+/* 90 */
+@keyframes ninety {
     to {
-        /* 80 */
         stroke-dashoffset: 44;
     }
 }
 
-@-webkit-keyframes html {
+@-webkit-keyframes ninety {
     to {
-        /* 80 */
         stroke-dashoffset: 44;
     }
 }
 
-@keyframes css {
+
+/* 80 */
+@keyframes eighty {
     to {
-        /* 80 */
         stroke-dashoffset: 88;
     }
 }
 
-@-webkit-keyframes css {
+@-webkit-keyframes eighty {
     to {
-        /* 80 */
         stroke-dashoffset: 88;
     }
 }
 
-@keyframes illust {
+/* 75 */
+@keyframes seventy-five {
     to {
-        /* 75 */
         stroke-dashoffset: 110;
     }
 }
 
-@-webkit-keyframes illust {
+@-webkit-keyframes seventy-five {
     to {
-        /* 75 */
         stroke-dashoffset: 110;
     }
 }
 
-@keyframes jqueryptshop {
+/* 70 */
+@keyframes seventy {
     to {
-        /* 70 */
         stroke-dashoffset: 132;
     }
 }
 
-@-webkit-keyframes jqueryptshop {
+@-webkit-keyframes seventy {
     to {
-        /* 70 */
         stroke-dashoffset: 132;
     }
 }
 
-@keyframes jsreact {
+/* 60 */
+@keyframes sixty {
     to {
         stroke-dashoffset: 176;
-        /* 60 */
     }
 }
 
-@-webkit-keyframes jsreact {
+@-webkit-keyframes sixty {
     to {
         stroke-dashoffset: 176;
-        /* 60 */
     }
 }
 
