@@ -32,8 +32,8 @@ function scrollEvent() {
             e.classList.remove("circle_animation");
         });
     };
-
-    if (window.pageYOffset >= 70) {
+    const modal = document.querySelector("#works > div > span");
+    if (window.pageYOffset >= 70 && modal.className === "close") {
         header.classList.add("on");
         topbtn.classList.add("on");
     } else {
@@ -54,13 +54,11 @@ function clickedImage(target) {
         [header, topbtn, closeBtn].forEach((el, i) => {
             removeOrAdd((i === 2 ? "add" : "remove"), el, "on");
         });
-        body.style.overflowX = "hidden";
         modalImg.src = target.children[0].src;
         modalImg.alt = target.children[0].alt;
     } else if (target.className === "close on") {
         [header, topbtn].forEach(el => removeOrAdd("add", el, "on"));
         [target, modalImg].forEach((el, i) => removeOrAdd("remove", el, (i === 0 ? "on" : "zoom")));
-        body.style.overflowX = "overlay";
         $(modal).fadeOut();
     } else if (target.className === "gallary-img" || "gallary-img zoom") {
         target.classList.toggle("zoom");
