@@ -481,19 +481,11 @@ section#projects h2, section#skills h2, section#works h2 {
     justify-content: space-between;
 }
 
-#about .inner {
-    padding-left: 100px;
-    padding-right: 100px;
-}
-
 #about .content ul,
 #projects .content {
     padding: 25px;
     z-index: 1;
-}
-
-#about .content ul+ul {
-    margin-left: 30px;
+    width: 33.3%;
 }
 
 #about .content .list-title {
@@ -1353,12 +1345,9 @@ footer .copyright {
         transform: translate(504.063px, 45.523799999999994px) rotate(0.549032rad);
     }
 
-    #about .inner, #projects .inner {
-        padding: 0 15px;
-    }
-
     #about {
         height: 100%;
+        padding: 120px 0;
     }
 
     #about::after {
@@ -1371,6 +1360,7 @@ footer .copyright {
     }
 
     #about .content ul {
+        width: 100%;
         padding-bottom: 30px;
         border: 1px solid rgba(238, 238, 238, 0.4);
     }
@@ -1474,6 +1464,10 @@ footer .copyright {
 
     #skills {
         height: 100%;
+    }
+    
+    #about .inner, #projects .inner {
+        padding: 0 15px;
     }
 
     #projects .cards>li {
