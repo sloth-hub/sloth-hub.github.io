@@ -10,8 +10,8 @@ const navmenu = document.querySelector("ul.nav-menu");
 init();
 
 function init() {
-    AOS.init();
-    window.addEventListener("scroll", scrollEvent);
+    cardEvent();
+    window.addEventListener("scroll", skillEvent);
     body.addEventListener("click", ({ target }) => {
         if (target.className === "toggle-bar") {
             clickedToggleBar();
@@ -21,7 +21,29 @@ function init() {
     });
 }
 
-function scrollEvent() {
+function cardEvent() {
+    const options = {
+        root: null,
+        rootMargin: "10px",
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+    }
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+            } else {
+                entry.target.classList.remove("active");
+            }
+        });
+    }, options);
+
+    const cards = document.querySelectorAll(".fade-animate");
+
+    cards.forEach(e => observer.observe(e));
+}
+
+function skillEvent() {
     const skills = document.querySelectorAll("circle.skillbar");
     if (window.scrollY >= 1500 && window.scrollY <= 2650) {
         skills.forEach((e) => {
@@ -32,14 +54,6 @@ function scrollEvent() {
             e.classList.remove("circle_animation");
         });
     };
-    const modal = document.querySelector("#works > div > span");
-    if (window.pageYOffset >= 70 && modal.className === "close") {
-        header.classList.add("on");
-        topbtn.classList.add("on");
-    } else {
-        header.classList.remove("on");
-        topbtn.classList.remove("on");
-    }
 }
 
 function clickedToggleBar() {
@@ -56,11 +70,12 @@ function clickedImage(target) {
         });
         modalImg.src = target.children[0].src;
         modalImg.alt = target.children[0].alt;
+        body.classList.add("stop-scroll");
     } else if (target.className === "close on") {
         [header, topbtn].forEach(el => removeOrAdd("add", el, "on"));
         [target, modalImg].forEach((el, i) => removeOrAdd("remove", el, (i === 0 ? "on" : "zoom")));
         $(modal).fadeOut();
-    } else if (target.className === "gallary-img" || "gallary-img zoom") {
+    } else if (target.className.includes("gallary-img")) {
         target.classList.toggle("zoom");
     }
 

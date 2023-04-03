@@ -24,7 +24,3 @@
 + CSS3
 + JavaScript
 + JQuery
-+ Git, Github
-
-## **LIBRARY**
-+ AOS.js
