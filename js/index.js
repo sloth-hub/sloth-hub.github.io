@@ -11,7 +11,7 @@ init();
 
 function init() {
     cardEvent();
-    window.addEventListener("scroll", skillEvent);
+    window.addEventListener("scroll", scrollEvent);
     body.addEventListener("click", ({ target }) => {
         if (target.className === "toggle-bar") {
             clickedToggleBar();
@@ -43,17 +43,16 @@ function cardEvent() {
     cards.forEach(e => observer.observe(e));
 }
 
-function skillEvent() {
-    const skills = document.querySelectorAll("circle.skillbar");
-    if (window.scrollY >= 1500 && window.scrollY <= 2650) {
-        skills.forEach((e) => {
-            e.classList.add("circle_animation");
-        });
+function scrollEvent() {
+
+    const modal = document.querySelector("#works > div > span");
+    if (window.pageYOffset >= 70 && modal.className === "close") {
+        header.classList.add("on");
+        topbtn.classList.add("on");
     } else {
-        skills.forEach((e) => {
-            e.classList.remove("circle_animation");
-        });
-    };
+        header.classList.remove("on");
+        topbtn.classList.remove("on");
+    }
 }
 
 function clickedToggleBar() {
@@ -78,7 +77,6 @@ function clickedImage(target) {
     } else if (target.className.includes("gallary-img")) {
         target.classList.toggle("zoom");
     }
-
 }
 
 function removeOrAdd(type, target, classname) {

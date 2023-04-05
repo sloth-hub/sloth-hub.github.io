@@ -5,10 +5,6 @@
     scroll-behavior: smooth;
 }
 
-body.stop-scroll {
-    position: fixed;
-}
-
 .fade-animate {
     opacity: 0;
     transition: opacity .5s, transform .8s;
@@ -87,7 +83,7 @@ a, a:link, a:visited, a:hover, a:active {
     color: inherit;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h1, h2, h3, h5, h6 {
     margin: 0;
     font-weight: inherit;
     text-transform: uppercase;
@@ -99,7 +95,7 @@ h1 {
     font-weight: 700;
 }
 
-h2 {
+h1 {
     font-size: 2.5rem;
     letter-spacing: 0.8rem;
     font-weight: 700;
@@ -108,7 +104,7 @@ h2 {
     color: #fff;
 }
 
-h3, .list-title {
+h2, .list-title {
     font-size: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.5rem;
@@ -283,7 +279,7 @@ section#skills, section#works {
     height: 100%;
 }
 
-section#projects h2, section#skills h2, section#works h2 {
+section#projects h1, section#skills h1, section#works h1 {
     color: #777777;
 }
 
@@ -521,6 +517,10 @@ section#projects h2, section#skills h2, section#works h2 {
     font-size: 1.2rem;
 }
 
+#about .content ul+ul {
+    margin-left: 20px;
+}
+
 #about .content li+li {
     margin-top: 8px;
 }
@@ -567,67 +567,31 @@ section#projects h2, section#skills h2, section#works h2 {
 
 /* skills */
 
-#skills .chart-wrap {
+#skills .skills-wrap {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-#skills .skill-chart {
-    position: relative;
-    margin: 10px 30px;
-    color: #777777;
-    font-size: 14px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+#skills .skills-wrap h2 {
+    margin-bottom: 15px;
 }
 
-#skills .skill-chart h3 {
-    position: absolute;
-    white-space: pre-line;
-    font-size: 0.8rem;
-    padding-left: 12px;
+#skills .skills-wrap .list-wrap {
+    background-color: #fff;
+    padding: 25px;
+    width: 25%;
+    border-radius: 10px;
 }
 
-#skills svg {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
+#skills .skills-wrap .list-wrap + .list-wrap {
+    margin-left: 20px;
 }
 
-.circle_animation {
-    stroke-dasharray: 440;
-    stroke-dashoffset: 440;
+#skills .skill-list li  {
+    font-size: 1.3rem;
 }
 
-.skill-chart.html .circle_animation {
-    -webkit-animation: ninety 1s ease-out forwards;
-    animation: ninety 1s ease-out forwards;
-}
-
-.skill-chart.css .circle_animation {
-    -webkit-animation: eighty 1s ease-out forwards;
-    animation: eighty 1s ease-out forwards;
-}
-
-.skill-chart.illustrator .circle_animation,
-.skill-chart.javascript .circle_animation {
-    -webkit-animation: seventy-five 1s ease-out forwards;
-    animation: seventy-five 1s ease-out forwards;
-}
-
-.skill-chart.photoshop .circle_animation,
-.skill-chart.react .circle_animation {
-    -webkit-animation: seventy 1s ease-out forwards;
-    animation: seventy 1s ease-out forwards;
-}
-
-.skill-chart.jquery .circle_animation {
-    -webkit-animation: sixty 1s ease-out forwards;
-    animation: sixty 1s ease-out forwards;
-}
 
 /* projects */
 
@@ -693,96 +657,36 @@ section#projects h2, section#skills h2, section#works h2 {
     border: 1px solid #eee;
 }
 
-#projects h3 {
+#projects h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-#projects h4 {
+#projects h3 {
     margin: 20px 0;
 }
 
-#projects .skill-list, #projects .color-list {
+#projects .skill-list, #projects .library-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-#projects .skill-desc, #projects .color-list .color {
+#projects .skill-desc, #projects .library-desc {
     border: 1px solid #eee;
     border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+#projects .skill-desc:last-child, #projects .library-desc:last-child {
+    margin-right: 0;
 }
 
 #projects .list-title {
     font-size: 1.2rem;
 }
 
-#projects .skill-desc+.skill-desc,
-#projects .color-list .color+.color {
-    margin-left: 5px;
-}
-
-#projects .skill-desc {
-    margin-bottom: 5px;
-    padding: 5px;
-}
-
-#projects .skill-desc:nth-child(6) {
-    margin-left: 0;
-}
-
-#projects .color-list {
-    flex-wrap: nowrap;
-}
-
-#projects .color-list .color {
-    width: 100px;
-    height: 20px;
-
-}
-
-#projects .color-list .color.orange {
-    background-color: #ffaf74;
-}
-
-#projects .color-list .color.red {
-    background-color: #ff6f73;
-}
-
-#projects .color-list .color.rose {
-    background-color: #a03c3c;
-}
-
-#projects .color-list .color.mint {
-    background-color: #97ffe4;
-}
-
-#projects .color-list .color.violet {
-    background-color: #ac97ff;
-}
-
-#projects .color-list .color.salmon {
-    background-color: #ffaa97;
-}
-
-#projects .color-list .color.kellogg {
-    background-color: #ba0c2f;
-}
-
-#projects .color-list .color.kellogg_black {
-    background-color: #2B2B2B;
-}
-
-#projects .color-list .color.white {
-    background-color: #fff;
-}
-
-#projects .color-list .color.cvsnew_main {
-    background-color: #4BCFE5;
-}
-
-#projects .color-list .color.cvsnew_sub {
-    background-color: #f1d950;
-}
 
 /* works */
 
@@ -941,7 +845,7 @@ section#contact {
     height: 100%;
 }
 
-#contact h2 {
+#contact h1 {
     margin-bottom: 0;
 }
 
@@ -1023,12 +927,6 @@ footer .copyright {
         right: -55px;
     }
 
-    /* about */
-
-    #about .education {
-        margin: 0px 15px;
-    }
-
     /* projcets */
 
     #projects .cards>li {
@@ -1082,10 +980,6 @@ footer .copyright {
         padding: 0;
     }
 
-    #skills .skill-chart {
-        margin: 5px;
-    }
-
     #projects .cards>li {
         flex-direction: column;
         justify-content: space-around;
@@ -1095,16 +989,12 @@ footer .copyright {
         padding-right: 0;
     }
 
-    #projects h3 {
+    #projects h2 {
         padding-top: 30px;
     }
 
     #projects .proj-thumb {
         width: 100%;
-    }
-
-    #projects .skill-desc:nth-child(6) {
-        margin-left: 5px;
     }
 
     #works .gallary .gallary-item {
@@ -1405,10 +1295,6 @@ footer .copyright {
         width: 100%;
     }
 
-    #projects .skill-desc:nth-child(7) {
-        margin-left: 0px;
-    }
-
     #works .gallary {
         flex-direction: column;
         justify-content: flex-start;
@@ -1437,7 +1323,7 @@ footer .copyright {
 /* mobile(xs) */
 @media (max-width: 576px) {
 
-    h2 {
+    h1 {
         margin-bottom: 80px;
     }
 
@@ -1493,21 +1379,13 @@ footer .copyright {
     #skills {
         height: 100%;
     }
-    
+
     #about .inner, #projects .inner {
         padding: 0 15px;
     }
 
     #projects .cards>li {
         padding: 25px 25px 30px;
-    }
-
-    #projects .skill-list {
-        margin-left: -5px;
-    }
-
-    #projects .skill-desc:nth-child(n) {
-        margin-left: 5px;
     }
 
     #works .gallary .gallary-item {
@@ -1519,7 +1397,6 @@ footer .copyright {
         top: 60px;
         left: 5px;
     }
-
 
     #works .gallary .gallary-item:first-child .caption {
         padding: 0 45px;
