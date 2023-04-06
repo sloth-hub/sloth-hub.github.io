@@ -4,7 +4,7 @@ const work = document.querySelector("#works");
 const closeBtn = document.querySelector("span.close");
 const modal = document.querySelector("div.modal");
 const modalImg = modal.querySelector("img.gallary-img");
-const topbtn = document.querySelector("a.top");
+const topbtn = document.querySelector("button.top");
 const navmenu = document.querySelector("ul.nav-menu");
 
 init();
@@ -15,8 +15,10 @@ function init() {
     body.addEventListener("click", ({ target }) => {
         if (target.className === "toggle-bar") {
             clickedToggleBar();
-        } else if (target.closest("section").id === "works") {
+        } else if (target.closest("section") && target.closest("section").id === "works") {
             clickedImage(target);
+        } else if (target.className.includes("top")) {
+            window.scrollTo({top: 0});
         }
     });
 }
