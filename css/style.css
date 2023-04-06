@@ -21,7 +21,7 @@
 
 .fade-animate.fade-top {
     transform: translateY(20%);
-    transition-delay: .5s;
+    transition-delay: .3s;
 }
 
 .fade-animate.active {
@@ -876,10 +876,12 @@ section#contact {
 }
 
 #contact .card li::before {
+    position: relative;
     font-family: 'Material Symbols Rounded';
     font-size: 28px;
     padding-right: 10px;
     padding-left: 10px;
+    top: 3px;
 }
 
 #contact .github::before {
@@ -889,6 +891,8 @@ section#contact {
     padding-right: 17px;
     transform: scale(0.8);
     transition: filter 0.25s linear;
+    left: -1px;
+    top: 5px;
 }
 
 #contact .github:hover::before {
@@ -897,7 +901,6 @@ section#contact {
 
 #contact .github a:hover {
     color: #777;
-
 }
 
 /* footer */
