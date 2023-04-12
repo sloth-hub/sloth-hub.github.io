@@ -240,7 +240,7 @@ button.top.on::after {
     line-height: 120px;
     display: block;
     width: 100%;
-    transition: font-weight 0.1s linear, text-shadow 0.1s linear;
+    transition: text-shadow 0.05s linear;
 }
 
 .header-wrap.on .nav-link {
