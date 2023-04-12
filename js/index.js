@@ -24,24 +24,25 @@ function init() {
 }
 
 function cardEvent() {
-    const options = {
-        root: null,
-        rootMargin: "10px",
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-    }
 
     const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
+        let delay = 0;
+        entries.forEach((entry) => {
+            const next = entry.target;
             if (entry.isIntersecting) {
-                entry.target.classList.add("active");
+                if (next) {
+                    setTimeout(() => {
+                        next.classList.add("active");
+                    }, delay);
+                    delay += 200;
+                }
             } else {
-                entry.target.classList.remove("active");
+                next.classList.remove("active");
             }
         });
-    }, options);
+    });
 
     const cards = document.querySelectorAll(".fade-animate");
-
     cards.forEach(e => observer.observe(e));
 }
 
