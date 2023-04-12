@@ -141,7 +141,7 @@ button.top.on {
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: saturate(150%) blur(30px);
     box-shadow: 0px 3px 10px 0px rgb(153 153 153 / 10%);
-    transition: transform .5s ease, background .5s ease, height .5s ease;
+    transition: transform .5s ease, background-color .5s ease;
 }
 
 .header-wrap.on {
@@ -1090,13 +1090,32 @@ footer .copyright {
 
     /* mobile navbar */
 
-
     .header-wrap {
-        transition: 0.3s ease;
+        animation: passive-header 0.3s ease forwards;
     }
 
     .header-wrap.active {
-        height: 300px;
+        animation: active-header 0.3s ease forwards;
+    }
+
+    @keyframes active-header {
+        from {
+            height: 70px;
+        }
+
+        to {
+            height: 300px;
+        }
+    }
+
+    @keyframes passive-header {
+        to {
+            height: 70px;
+        }
+
+        from {
+            height: 300px;
+        }
     }
 
     .nav-menu {
@@ -1145,7 +1164,7 @@ footer .copyright {
     }
 
     .navbar .nav-logo {
-        line-height: 70px;
+        line-height: 68px;
     }
 
     .navbar .toggle-bar::after {
@@ -1541,71 +1560,5 @@ footer .copyright {
 
     100% {
         background-position: 0% 50%
-    }
-}
-
-/* 90 */
-@keyframes ninety {
-    to {
-        stroke-dashoffset: 44;
-    }
-}
-
-@-webkit-keyframes ninety {
-    to {
-        stroke-dashoffset: 44;
-    }
-}
-
-
-/* 80 */
-@keyframes eighty {
-    to {
-        stroke-dashoffset: 88;
-    }
-}
-
-@-webkit-keyframes eighty {
-    to {
-        stroke-dashoffset: 88;
-    }
-}
-
-/* 75 */
-@keyframes seventy-five {
-    to {
-        stroke-dashoffset: 110;
-    }
-}
-
-@-webkit-keyframes seventy-five {
-    to {
-        stroke-dashoffset: 110;
-    }
-}
-
-/* 70 */
-@keyframes seventy {
-    to {
-        stroke-dashoffset: 132;
-    }
-}
-
-@-webkit-keyframes seventy {
-    to {
-        stroke-dashoffset: 132;
-    }
-}
-
-/* 60 */
-@keyframes sixty {
-    to {
-        stroke-dashoffset: 176;
-    }
-}
-
-@-webkit-keyframes sixty {
-    to {
-        stroke-dashoffset: 176;
     }
 }
