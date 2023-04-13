@@ -90,10 +90,12 @@ function clickedImage(target) {
         });
         modalImg.src = target.children[0].src;
         modalImg.alt = target.children[0].alt;
+        body.classList.add("stop-scrolling");
     } else if (target.className === "close on") {
         [header, topbtn].forEach(el => removeOrAdd("add", el, "on"));
         [target, modalImg].forEach((el, i) => removeOrAdd("remove", el, (i === 0 ? "on" : "zoom")));
         $(modal).fadeOut();
+        body.classList.remove("stop-scrolling");
     } else if (target.className.includes("gallary-img")) {
         target.classList.toggle("zoom");
     }
