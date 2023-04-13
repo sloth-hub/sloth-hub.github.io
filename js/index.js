@@ -58,15 +58,17 @@ function changeNav() {
             const navmenu = body.querySelector(".nav-menu");
             const id = entry.target.id;
             if (entry.isIntersecting && id !== "home") {
+                if (navmenu.querySelector(".active")) {
+                    navmenu.querySelector(".active").classList.remove("active");
+                }
                 navmenu.querySelector(`[href="#${id}"]`).classList.add('active');
-
-            } else {
+            } else if (id === "home") {
                 if (navmenu.querySelector(".active")) {
                     navmenu.querySelector(".active").classList.remove("active");
                 }
             }
         });
-    }, { threshold: 0.2 });
+    }, { threshold: 0.1 });
     const sections = body.querySelectorAll("section");
     sections.forEach(section => observer.observe(section));
 }

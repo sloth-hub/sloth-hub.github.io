@@ -305,13 +305,10 @@ section#projects h1, section#skills h1, section#works h1 {
     position: relative;
     transition: all 0.3s ease;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding-top: 30px;
-}
-
-#home .inner {
     width: 100%;
+    height: 100%;
+    padding-top: 30px;
 }
 
 #home .content {
