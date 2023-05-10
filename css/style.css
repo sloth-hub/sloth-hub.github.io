@@ -1093,8 +1093,8 @@ footer .copyright {
 
     .inner {
         max-width: 560px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     section+section {
@@ -1198,15 +1198,14 @@ footer .copyright {
 
     /* --------------- */
 
+    h1 {
+        margin-bottom: 80px;
+    }
     #home {
         margin-bottom: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    #home .inner {
-        padding: 0;
     }
 
     #home .content-left img {
@@ -1349,7 +1348,7 @@ footer .copyright {
     }
 
     #about::after {
-        height: 67%;
+        height: 70%;
     }
 
     #about .content {
@@ -1408,7 +1407,8 @@ footer .copyright {
 @media (max-width: 576px) {
 
     h1 {
-        margin-bottom: 80px;
+        margin-bottom: 50px;
+        line-height: 3rem;
     }
 
     .navbar .inner {
@@ -1418,6 +1418,10 @@ footer .copyright {
 
     #home {
         padding-top: 72px;
+    }
+
+    #home .inner {
+        align-items: center;
     }
 
     #home .content {
@@ -1435,7 +1439,7 @@ footer .copyright {
     }
 
     #home .content-right {
-        left: 2.3vw;
+        left: 5vw;
         bottom: 20px;
         width: 100%;
         /* height: 154px; */
@@ -1465,6 +1469,10 @@ footer .copyright {
         padding: 120px 0;
     }
 
+    #about::after {
+        height: 120vh;
+    }
+
     #skills {
         height: 100%;
     }
@@ -1483,10 +1491,6 @@ footer .copyright {
         margin-top: 18px;
     }
 
-    #about .inner, #projects .inner {
-        padding: 0 15px;
-    }
-
     #projects h2 {
         font-size: 1.5rem;
     }
@@ -1499,10 +1503,13 @@ footer .copyright {
         padding: 25px 25px 30px;
     }
 
-
     #works .gallary .gallary-item {
         max-width: 250px;
         max-height: 250px;
+    }
+
+    #works .gallary .gallary-item+.gallary-item {
+        margin-top: 30px;
     }
 
     #works .gallary .gallary-item::after {
@@ -1527,6 +1534,7 @@ footer .copyright {
 
     #contact .card li {
         word-break: break-word;
+        font-size: 0.9rem;
         line-height: 2rem;
     }
 
