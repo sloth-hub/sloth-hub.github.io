@@ -4,7 +4,6 @@
 
 + IntersectionObserver api를 사용해 스크롤 애니메이션 구현
 + javascript와 Jquery를 사용해 이미지 모달 구현
-+ 반응형웹에 맞는 
 
 ## 🔗 **SITE LINK**   
 
