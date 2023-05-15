@@ -12,20 +12,20 @@
 
 ## 🖥 PREVIEW - **WEB**
 
-![portfolio_1](https://user-images.githubusercontent.com/53851248/208674697-3f12e7d0-1ae8-43e5-9e44-26c3ed3b32e2.png)
-![portfolio_2](https://user-images.githubusercontent.com/53851248/208674706-b7f1ab14-6cd6-4050-87d2-87714c274614.png)
-![portfolio_3](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/0c1909d5-6de1-4951-925f-acbde3defa17)
-![portfolio_4](https://user-images.githubusercontent.com/53851248/208674708-079e6032-cad6-4622-b7b5-783f51f40619.png)
-![portfolio_5](https://user-images.githubusercontent.com/53851248/208674710-25615793-c535-4f26-94e8-1d97e41ac269.png)
-![portfolio_6](https://user-images.githubusercontent.com/53851248/208674712-f5c293b6-8d52-4096-8247-0d12c0b02799.png)
+![portfolio_web_1](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/0b30a71f-75ea-482f-ab61-c04ced3b7f55)
+![portfolio_web_2](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/350e757d-5b95-432b-a6b6-0d7d0ca9e1da)
+![portfolio_web_3](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/88ca9db9-f0fc-415d-b305-078a106c266c)
+![portfolio_web_4](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/33d0d825-55a7-4fe7-88d4-175545531638)
+![portfolio_web_5](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/5c9893a8-4d63-4afe-95b9-6b5d86bec16f)
+![portfolio_web_6](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/89f071e0-83d5-4491-9888-d17df785ffe0)
 
 ## 💻 PREVIEW - **TABLET**
 
-![tablet](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/047a88ad-0f15-4fc0-9637-82e1f4e15ab3)
+![portfolio_tablet](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/089caa30-05c9-4c1f-a8ec-2597a4eb4c1c)
 
 ## 📱 PREVIEW - **MOBILE**
 
-![mobile](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/4300a5cf-4cd7-4592-b571-997ad4332d1d)
+![portfolio_mobile](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/018cd870-da91-4f2f-bcc2-1c87c976cc78)
 
 <br>
 
