@@ -584,6 +584,7 @@ section#projects h1, section#skills h1, section#works h1 {
     background-color: #fff;
     padding: 30px 25px;
     width: 25%;
+    height: 400px;
 }
 
 #skills .skills-wrap .list-wrap+.list-wrap {
@@ -668,7 +669,7 @@ section#projects h1, section#skills h1, section#works h1 {
 
 #projects .content-left .url-list a {
     font-weight: 500;
-    border: 1px solid #eeeeee;
+    border: 1px solid #eee;
     padding: 10px;
     width: 100%;
     text-align: center;
@@ -705,7 +706,7 @@ section#projects h1, section#skills h1, section#works h1 {
 }
 
 #projects .skill-desc, #projects .library-desc {
-    border: 1px solid #eee;
+    background-color: rgb(153 153 153 / 10%);
     border-radius: 5px;
     margin-right: 5px;
     margin-bottom: 5px;
@@ -1033,11 +1034,11 @@ footer .copyright {
 
     #skills .skills-wrap .list-wrap {
         width: 48%;
+        height: 360px;
     }
 
     #skills .skills-wrap .list-wrap+.list-wrap {
         margin-left: 0;
-        height: 380px;
     }
 
     #skills .skills-wrap .list-wrap:nth-child(n+3) {
@@ -1048,12 +1049,8 @@ footer .copyright {
         justify-content: center;
     }
 
-    #skills .skill-list li {
-        width: 120px;
-    }
-
     #skills .list-wrap:first-of-type .skill-list {
-        height: 100%;
+        grid-template-columns: repeat(3, 1fr);
     }
 
     #projects .cards>li {
@@ -1394,6 +1391,16 @@ footer .copyright {
         margin-top: 20px;
     }
 
+    #skills .skills-wrap .list-wrap {
+        height: 400px;
+    }
+
+    #skills .list-wrap:first-of-type .skill-list {
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+        grid-row-gap: 0;
+    }
+
     #skills .skill-list li {
         width: 100px;
     }
@@ -1513,6 +1520,8 @@ footer .copyright {
 
     #skills .skills-wrap .list-wrap {
         padding: 20px 15px;
+        height: 70vw;
+        min-height: 300px;
     }
 
     #skills .skills-wrap .list-wrap:nth-child(n+3) {
@@ -1520,7 +1529,7 @@ footer .copyright {
     }
 
     #skills .skill-list {
-        justify-content: space-between;
+        justify-content: center;
     }
 
     #skills .skill-list li {
@@ -1528,12 +1537,12 @@ footer .copyright {
         width: 17vw;
     }
 
-    #skills .skill-list li:last-child:not(li:nth-child(2)) {
-        margin: 0 auto;
-    }
-
     #skills .skill-list li h3, #skills .card.design .skill-list li h3 {
         font-size: max(2.8vw, 11px);
+    }
+
+    #skills .skill-list img {
+        width: max(35px, 9vw);
     }
 
     #projects h2 {
