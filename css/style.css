@@ -129,6 +129,42 @@ img {
     display: flex;
 }
 
+.skill-desc.html {
+    background-color: rgb(227, 79, 38, 0.2);
+}
+
+.skill-desc.css {
+    background-color: rgb(21, 115, 183, 0.1);
+}
+
+.skill-desc.js {
+    background-color: rgb(247, 222, 28, 0.1);
+}
+
+.skill-desc.jquery {
+    background-color: rgb(7, 103, 171, 0.1);
+}
+
+.skill-desc.react {
+    background-color: rgb(96, 217, 251, 0.1);
+}
+
+.skill-desc.firebase {
+    background-color: rgb(255, 201, 41, 0.1);
+}
+
+.skill-desc.ts {
+    background-color: rgb(49, 120, 196, 0.1);
+}
+
+.skill-desc.nodejs {
+    background-color: rgb(51, 153, 51, 0.1);
+}
+
+.skill-desc.express {
+    background-color: rgb(0, 0, 0, 0.1);
+}
+
 /* header */
 
 .header-wrap {
@@ -706,13 +742,16 @@ section#projects h1, section#skills h1, section#works h1 {
 }
 
 #projects .skill-desc, #projects .library-desc {
-    background-color: rgb(153 153 153 / 10%);
     border-radius: 5px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin-right: 8px;
+    margin-bottom: 8px;
     padding: 5px;
     cursor: default;
     font-weight: 400;
+}
+
+#projects .library-desc {
+    background-color: rgb(153 153 153 / 10%);
 }
 
 #projects .skill-desc:last-child, #projects .library-desc:last-child {
