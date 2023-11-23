@@ -16,6 +16,14 @@ function init() {
             clickedImage(target);
         } else if (target.className.includes("top")) {
             window.scrollTo({ top: 0 });
+        } else if (target.closest(".detail-btn")) {
+            clickedDetail(target);
+        } else if (target.tagName === "IMG" && target.parentNode.classList.contains("detail")) {
+            window.open(target.src);
+        } else if (target.className === "close") {
+            const offsetTop = target.closest(".card").offsetTop;
+            target.parentNode.classList.remove("active");
+            window.scrollTo({ top: offsetTop - 100 });
         }
     });
 
@@ -107,4 +115,10 @@ function removeOrAdd(type, target, classname) {
     } else {
         target.classList.add(classname);
     }
+}
+
+function clickedDetail(e) {
+    const target = e.closest(".detail-btn");
+    const child = target.closest(".card").querySelector(".detail");
+    child.classList.toggle("active");
 }
