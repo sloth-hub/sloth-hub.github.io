@@ -804,6 +804,7 @@ section#projects h1, section#skills h1, section#works h1 {
     border-radius: 15px;
     width: 100%;
     padding: 10px 0;
+    margin-top: 10px;
     background-color: rgb(153 153 153 / 10%);
     font-weight: 400;
     letter-spacing: 0.5rem;
