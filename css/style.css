@@ -531,7 +531,7 @@ section#projects h1, section#skills h1, section#works h1 {
     display: flex;
     position: absolute;
     width: 100%;
-    height: 50%;
+    height: 370px;
     left: 0;
     bottom: 0;
     background-color: #fff;
@@ -1547,9 +1547,38 @@ footer .copyright {
 /* mobile(xs) */
 @media (max-width: 576px) {
 
+    #root {
+        background-size: 300% 300%;
+    }
+
+    @keyframes active-header {
+        from {
+            height: 60px;
+        }
+
+        to {
+            height: 290px;
+        }
+    }
+
+    @keyframes passive-header {
+        to {
+            height: 60px;
+        }
+
+        from {
+            height: 290px;
+        }
+    }
+
     h1 {
         margin-bottom: 50px;
         line-height: 3rem;
+    }
+
+    .header-wrap.on {
+        top: -60px;
+        transform: translateY(60px);
     }
 
     .navbar .inner {
@@ -1557,11 +1586,24 @@ footer .copyright {
         padding-right: 15px;
     }
 
+    .nav-menu {
+        top: 62px;
+    }
+
+    .navbar .nav-logo {
+        line-height: 57px;
+    }
+
+    section+section {
+        padding: 110px 0;
+    }
+
     #home {
         padding-top: 72px;
     }
 
     #home .inner {
+        padding-top: 0;
         align-items: center;
     }
 
@@ -1580,10 +1622,9 @@ footer .copyright {
     }
 
     #home .content-right {
-        left: -0.5vw;
+        left: 0.8vw;
         bottom: 20px;
         width: 100%;
-        /* height: 154px; */
     }
 
     .warp:nth-child(n) {
@@ -1611,7 +1652,7 @@ footer .copyright {
     }
 
     #about::after {
-        height: 80vh;
+        height: 760px;
     }
 
     #skills {
