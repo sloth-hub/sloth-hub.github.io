@@ -303,7 +303,7 @@ section {
 }
 
 section+section {
-    padding: 180px 0;
+    padding: 160px 0;
 }
 
 section#projects {
@@ -1070,7 +1070,7 @@ footer .copyright {
     /* projcets */
 
     #projects .cards>li {
-        padding: 50px;
+        padding: 40px;
     }
 
     #projects .content-left {
@@ -1087,7 +1087,6 @@ footer .copyright {
     }
 
     #projects .content-left .url-list {
-        margin-top: 30px;
         grid-template-columns: repeat(2, 1fr);
         grid-row-gap: 15px;
     }
@@ -1166,7 +1165,7 @@ footer .copyright {
     }
 
     #projects h2 {
-        padding-top: 30px;
+        margin-top: 30px;
     }
 
     #projects .proj-thumb {
@@ -1512,6 +1511,10 @@ footer .copyright {
         font-size: 0.8rem;
     }
 
+    #projects .cards>li {
+        padding: 30px;
+    }
+
     #projects .content-right {
         width: 100%;
     }
@@ -1650,14 +1653,26 @@ footer .copyright {
 
     #projects h2 {
         font-size: 1.5rem;
+        line-height: 1.5rem;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     #projects h3 {
         font-size: 1.3rem;
+        line-height: 1.3rem;
+        margin-top: 20px;
+        margin-bottom: 15px;
     }
 
     #projects .cards>li {
-        padding: 25px 25px 30px;
+        padding-bottom: 40px;
+    }
+
+    #projects .content-left .url-list {
+        margin-top: 15px;
+        grid-row-gap: 10px;
+        grid-column-gap: 10px;
     }
 
     #works .gallary .gallary-item {
