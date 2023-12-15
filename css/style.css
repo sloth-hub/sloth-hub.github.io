@@ -81,7 +81,7 @@ li {
 
 a {
     text-decoration: none;
-    transition: color 0.3s linear;
+    transition: color 0.2s linear;
 }
 
 a, a:link, a:visited, a:hover, a:active {
@@ -711,7 +711,7 @@ section#projects h1, section#skills h1, section#works h1 {
     margin-top: 20px;
 }
 
-#projects .content-left .url-list li a, #projects .content-left .url-list li button {
+#projects .content-left .url-list li {
     display: block;
     font-weight: 500;
     border: 1px solid #eee;
@@ -724,11 +724,11 @@ section#projects h1, section#skills h1, section#works h1 {
     cursor: pointer;
 }
 
-#projects .content-left .url-list li a:hover {
+#projects .content-left .url-list li:hover {
     background-color: rgb(153 153 153 / 10%);
 }
 
-#projects .detail-btn {
+#projects .detail-btn button {
     border: none;
     background-color: transparent;
     color: inherit;
@@ -1017,7 +1017,7 @@ section#contact {
     padding-left: 7px;
     padding-right: 17px;
     transform: scale(0.8);
-    transition: filter 0.25s linear;
+    transition: filter 0.2s linear;
     left: -1px;
     top: 5px;
 }
@@ -1026,7 +1026,7 @@ section#contact {
     filter: brightness(5);
 }
 
-#contact .github a:hover {
+#contact .github:hover a {
     color: #777;
 }
 
