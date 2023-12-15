@@ -1717,8 +1717,9 @@ footer .copyright {
     }
 
     #works .gallary .gallary-item {
-        max-width: 250px;
-        max-height: 250px;
+        width: 60vw;
+        height: 60vw;
+        margin: 0;
     }
 
     #works .gallary .gallary-item+.gallary-item {
@@ -1726,13 +1727,14 @@ footer .copyright {
     }
 
     #works .gallary .gallary-item::after {
-        top: 60px;
+        top: 16vw;
         left: 5px;
+        font-size: 15vw;
     }
 
     #works .gallary .gallary-item:first-child .caption {
-        padding: 0 45px;
-        bottom: 25%;
+        padding: 0 10vw;
+        bottom: 17vw;
     }
 
     #contact .card {
