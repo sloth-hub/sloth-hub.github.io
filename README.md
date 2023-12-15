@@ -34,9 +34,9 @@
 <img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/77905747-3b31-45b4-a917-17f50a54f245" alt="portfolio_mobile_1" width="400">
 <img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/6d580c03-4ddf-4d29-a5bf-39db07ec8b26" alt="portfolio_mobile_2" width="400">
 <img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/5a6123da-16cc-4ad5-96ca-04c75d7a9dba" alt="portfolio_mobile_3" width="400">
-<img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/f73cde1e-7a7c-4dfb-b079-c7d21c7dacbc" alt="portfolio_mobile_3" width="400">
-<img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/86fefb96-7391-4cac-8274-95d65246b955" alt="portfolio_mobile_4" width="400">
-<img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/9ffd3b00-b3f0-48e3-b631-0111be99ff29" alt="portfolio_mobile_5" width="400">
+<img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/f73cde1e-7a7c-4dfb-b079-c7d21c7dacbc" alt="portfolio_mobile_4" width="400">
+<img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/b0a2a9a8-ad71-4f50-bc39-e6d81091196e" alt="portfolio_mobile_5" width="400">
+<img src="https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/9ffd3b00-b3f0-48e3-b631-0111be99ff29" alt="portfolio_mobile_6" width="400">
 
 <br>
 
