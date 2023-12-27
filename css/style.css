@@ -790,13 +790,19 @@ section#projects h1, section#skills h1, section#works h1 {
     display: none;
 }
 
+#projects .details {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
 #projects .detail.active {
     display: block;
 }
 
 #projects .detail img {
-    width: 100%;
-    cursor: pointer;
+    max-height: 550px;
+    cursor: zoom-in;
 }
 
 #projects .detail .close {
@@ -804,7 +810,7 @@ section#projects h1, section#skills h1, section#works h1 {
     border-radius: 15px;
     width: 100%;
     padding: 10px 0;
-    margin-top: 10px;
+    margin-top: 30px;
     background-color: rgb(153 153 153 / 10%);
     font-weight: 400;
     letter-spacing: 0.5rem;
@@ -1519,6 +1525,15 @@ footer .copyright {
         width: 100%;
     }
 
+    #projects .details {
+        align-items: center;
+    }
+
+    #projects .detail img {
+        width: 100%;
+        max-height: initial;
+    }
+
     #works .gallary {
         flex-direction: column;
         justify-content: flex-start;
@@ -1671,10 +1686,6 @@ footer .copyright {
         min-height: 300px;
     }
 
-    #skills .skills-wrap .list-wrap:nth-child(n+3) {
-        margin-top: 18px;
-    }
-
     #skills .skill-list {
         justify-content: center;
     }
@@ -1684,8 +1695,20 @@ footer .copyright {
         width: 17vw;
     }
 
-    #skills .skill-list li h3, #skills .card.design .skill-list li h3 {
+    #skills .skill-list li h3 {
         font-size: max(2.8vw, 11px);
+    }
+
+    #skills .card.design .skill-list {
+        justify-content: space-between;
+    }
+
+    #skills .card.design .skill-list li h3{
+        font-size: max(2.6vw, 9.5px);
+    }
+
+    #skills .card.design .skill-list li {
+        margin: 0 auto;
     }
 
     #skills .skill-list img {
