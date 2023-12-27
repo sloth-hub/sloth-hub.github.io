@@ -18,7 +18,7 @@ function init() {
             window.scrollTo({ top: 0 });
         } else if (target.closest(".detail-btn")) {
             clickedDetail(target);
-        } else if (target.tagName === "IMG" && target.parentNode.classList.contains("detail")) {
+        } else if (target.tagName === "IMG" && target.parentNode.classList.contains("details")) {
             window.open(target.src);
         } else if (target.className === "close") {
             const offsetTop = target.closest(".card").offsetTop;
