@@ -166,6 +166,10 @@ img {
     background-color: rgb(0, 0, 0, 0.1);
 }
 
+.skill-desc.figma {
+    background-color: rgb(242, 78, 30, 0.1);
+}
+
 /* header */
 
 .header-wrap {
