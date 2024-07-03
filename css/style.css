@@ -1514,6 +1514,10 @@ footer .copyright {
         grid-column: span 3;
     }
 
+    #skills .list-wrap.frontend .skill-list li:last-child {
+        grid-column: span 6;
+    }
+
     #skills .card.design .skill-list li h3 {
         font-size: 0.8rem;
     }
@@ -1675,21 +1679,25 @@ footer .copyright {
         height: 100%;
     }
 
-    #skills .skills-wrap {
-
-    }
-
-    #skills .skills-wrap h2 {
-        font-size: 4.2vw;
-        letter-spacing: 0.25rem;
-        margin-right: -0.25rem;
-    }
-
     #skills .skills-wrap .list-wrap {
         padding: 20px 15px;
         width: 100%;
-        /* height: 70vw;
-        min-height: 300px; */
+        min-height: 280px;
+        gap: 20px;
+    }
+
+    #skills .skills-wrap .list-wrap.frontend .skill-list li {
+        grid-column: span 2;
+    }
+
+    #skills .list-wrap.frontend .skill-list li:last-child {
+        grid-column-end: 5;
+    }
+
+    #skills .skills-wrap h2 {
+        font-size: max(4.6vw, 18px);
+        letter-spacing: 0.25rem;
+        margin-right: -0.25rem;
     }
 
     #skills .skill-list li h3 {
@@ -1698,10 +1706,6 @@ footer .copyright {
 
     #skills .card.design .skill-list li h3 {
         font-size: max(2.6vw, 9.5px);
-    }
-
-    #skills .skill-list img {
-        width: max(35px, 9vw);
     }
 
     #projects h2 {
