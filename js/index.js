@@ -51,7 +51,7 @@ function cardEvent() {
 }
 
 function scrollEvent() {
-    if (window.pageYOffset >= 70 && closeBtn) {
+    if (window.scrollY >= 70 && closeBtn) {
         header.classList.add("on");
         topbtn.classList.add("on");
     } else {

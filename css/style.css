@@ -615,7 +615,7 @@ section#projects h1, section#skills h1, section#works h1 {
 #skills .skills-wrap {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
 }
 
@@ -1145,6 +1145,7 @@ footer .copyright {
 
     #skills .skills-wrap {
         flex-wrap: wrap;
+        gap: 28px;
     }
 
     #skills .skills-wrap .list-wrap {
@@ -1507,11 +1508,10 @@ footer .copyright {
     /* skills */
 
     #skills .skills-wrap .list-wrap {
+        width: 100%;
         height: auto;
-    }
-
-    #skills .skills-wrap .list-wrap.frontend .skill-list li {
-        grid-column: span 3;
+        min-height: 291px;
+        gap: 25px;
     }
 
     #skills .list-wrap.frontend .skill-list li:last-child {
@@ -1679,10 +1679,13 @@ footer .copyright {
         height: 100%;
     }
 
+    #skills .skills-wrap {
+        gap: 30px;
+    }
+    
     #skills .skills-wrap .list-wrap {
         padding: 20px 15px;
-        width: 100%;
-        min-height: 280px;
+        min-height: 241px;
         gap: 20px;
     }
 
@@ -1706,6 +1709,10 @@ footer .copyright {
 
     #skills .card.design .skill-list li h3 {
         font-size: max(2.6vw, 9.5px);
+    }
+
+    #projects .cards>li+li {
+        margin-top: 30px;
     }
 
     #projects h2 {
