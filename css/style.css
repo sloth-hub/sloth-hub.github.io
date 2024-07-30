@@ -630,7 +630,7 @@ section#projects h1, section#skills h1, section#works h1 {
     background-color: #fff;
     padding: 30px 25px;
     width: 25%;
-    gap: 10px;
+    gap: 20px;
 }
 
 #skills .skill-list {
@@ -1074,7 +1074,7 @@ footer .copyright {
 
     /* skills */
 
-    #skills .skills-wrap .list-wrap.design .skill-list li {
+    #skills .skills-wrap .list-wrap:not(.frontend) .skill-list li {
         grid-column: span 6;
     }
 
@@ -1157,11 +1157,11 @@ footer .copyright {
         grid-column: span 2;
     }
 
-    #skills .skills-wrap .list-wrap.design .skill-list li {
+    #skills .skills-wrap .list-wrap:not(.frontend) .skill-list li {
         grid-column: span 3;
     }
 
-    #skills .skills-wrap .list-wrap.design .skill-list li:last-child {
+    #skills .skills-wrap .list-wrap:not(.frontend, .devops) .skill-list li:last-child {
         grid-column: span 6;
     }
 
