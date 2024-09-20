@@ -1698,7 +1698,7 @@ footer .copyright {
     }
 
     #skills .skills-wrap h2 {
-        font-size: max(4.6vw, 18px);
+        font-size: max(5.2vw, 18px);
         letter-spacing: 0.25rem;
         margin-right: -0.25rem;
     }
@@ -1731,7 +1731,8 @@ footer .copyright {
     }
 
     #projects .cards>li {
-        padding-bottom: 40px;
+        padding: 20px;
+        padding-bottom: 30px;
     }
 
     #projects .content-left .url-list {
@@ -1751,7 +1752,7 @@ footer .copyright {
     }
 
     #works .gallary .gallary-item::after {
-        top: 16vw;
+        top: 24vw;
         left: 5px;
         font-size: 15vw;
     }
@@ -1775,6 +1776,7 @@ footer .copyright {
         word-break: break-word;
         font-size: 0.9rem;
         line-height: 2rem;
+        letter-spacing: 0.2rem;
     }
 
 }
