@@ -308,6 +308,7 @@ button.top.on::after {
 
 section {
     height: 100vh;
+    min-height: 860px;
 }
 
 section+section {
@@ -539,7 +540,7 @@ section#projects h1, section#skills h1, section#works h1 {
     display: flex;
     position: absolute;
     width: 100%;
-    height: 470px;
+    height: 390px;
     left: 0;
     bottom: 0;
     background-color: #fff;
@@ -1672,7 +1673,7 @@ footer .copyright {
     }
 
     #about::after {
-        height: 760px;
+        height: 780px;
     }
 
     #skills {
