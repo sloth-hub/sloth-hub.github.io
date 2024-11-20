@@ -1559,6 +1559,11 @@ footer .copyright {
         top: 120px;
     }
 
+    #contact .inner {
+        justify-content: center;
+        gap: 60px;
+    }
+
     #contact .card {
         padding: 30px;
     }
