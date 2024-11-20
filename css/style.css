@@ -100,7 +100,7 @@ h1 {
     letter-spacing: 0.8rem;
     margin-right: -0.8rem;
     font-weight: 700;
-    margin-bottom: 120px;
+    margin-bottom: 90px;
     text-align: center;
     color: #fff;
 }
@@ -540,7 +540,7 @@ section#projects h1, section#skills h1, section#works h1 {
     display: flex;
     position: absolute;
     width: 100%;
-    height: 390px;
+    height: 480px;
     left: 0;
     bottom: 0;
     background-color: #fff;
@@ -1626,6 +1626,7 @@ footer .copyright {
 
     #home {
         padding-top: 72px;
+        min-height: initial;
     }
 
     #home .inner {
