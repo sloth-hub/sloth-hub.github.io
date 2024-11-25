@@ -12,21 +12,21 @@
 
 ## 🖥 PREVIEW - **PC**
 
-![portfolio_1_pc](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/2ea5a3d4-0c19-459d-b10a-f041ec460344)
-![portfolio_2_pc](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/ccaf73a3-9415-4027-b080-588d5a6744bc)
-![portfolio_3_pc](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/1ea0fe2d-4988-4c69-9eae-92032aefcb59)
-![portfolio_4_pc](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/0aa2104e-c05f-4306-8950-69606b957f06)
-![portfolio_5_pc](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/fdda5715-b986-4037-b4c4-3feb7e416409)
-![portfolio_6_pc](https://github.com/sloth-hub/sloth-hub.github.io/assets/53851248/f0e66fab-4619-4f57-be53-2a1e077880a2)
+![portfolio_pc_1](https://github.com/user-attachments/assets/a74b683f-9d16-473d-a2d5-6619d1192507)
+![portfolio_pc_2](https://github.com/user-attachments/assets/d60bf943-bdb9-4ad7-9ec3-89fe82839265)
+![portfolio_pc_3](https://github.com/user-attachments/assets/634d260e-80b8-4c4d-a64e-8a6976580fde)
+![portfolio_pc_4](https://github.com/user-attachments/assets/882e0c4d-ec5f-494d-86bd-b4ef398459d0)
+![portfolio_pc_5](https://github.com/user-attachments/assets/3363949a-ceb8-4123-9103-fe42dc314c40)
+![portfolio_pc_6](https://github.com/user-attachments/assets/9ee54c16-16ea-4833-ba47-ac554b01ed9a)
 
 
 ## 💻 PREVIEW - **TABLET**
 
-![portfolio_tablet](https://github.com/sloth-hub/whattoeattoday/assets/53851248/29da5fe2-7a6b-4321-abd4-456d7f9622e3)
+![portfolio_tablet](https://github.com/user-attachments/assets/71340934-54ea-4bb1-98ca-8f4e570080d6)
 
 ## 📱 PREVIEW - **MOBILE**
 
-![portfolio_mobile](https://github.com/sloth-hub/whattoeattoday/assets/53851248/88f6ca61-287d-4243-8e93-83b226070681)
+![portfolio_mobile](https://github.com/user-attachments/assets/f02499ef-25c3-4aee-b723-bfe15269f3fb)
 
 <br>
 
